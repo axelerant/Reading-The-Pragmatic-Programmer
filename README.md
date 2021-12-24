@@ -51,3 +51,8 @@ If you don't care about doing any job well, there is no point to it. The world h
 Think about what you're doing while you're doing it. Don't get on the auto-pilot mode. Constantly think why you are doing what you are doing. Critique your work. Question your decisions. And do it all the time.
 
 This is hard work. This is going to take time. But it is worth it. Spend time here ensures you learn and grow rather than repeat your work again because you didn't think about it.
+
+## Individual pragmatists, large teams
+
+- There should be engineering in software construction but that doesn't mean there is no individual craftsmanship.
+- Within the overall structure, there is always room for individuality. This is particularly true for software engineering.
