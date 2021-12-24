@@ -56,3 +56,12 @@ This is hard work. This is going to take time. But it is worth it. Spend time he
 
 - There should be engineering in software construction but that doesn't mean there is no individual craftsmanship.
 - Within the overall structure, there is always room for individuality. This is particularly true for software engineering.
+
+## It's a continuous process
+
+- Great lawns need small amounts of daily care and so do great programmers.
+- Kaizen: continuously making many small improvements.
+- Work on refining your skills every day.
+
+![Continuous Improvement](https://jamesclear.com/wp-content/uploads/2015/08/tiny-gains-graph.jpg)
+From [James Clear](https://jamesclear.com/continuous-improvement)
