@@ -21,3 +21,14 @@
 - For second edition, authors updated the technologies they referenced and reexamined the assumptions behind the practices.
 - One-third of the book is brand new and the majority of the rest was rewritten.
 - The authors dropped things that didn't make a lot of sense anymore and focused on new challenges and paradigms such as concurrency.
+
+### Preface to the first edition
+
+- This book will help you become a better programmer.
+- It's not theoretical. This is a book about doing.
+- Programming is a craft. Simply, it is about getting the computer to do what you want it to do.
+- As a programmer, you are part listener, part advisor, part interpreter, and part dictator.
+- "You try to capture elusive requirements and find a way of expressing them so that a mere machine can do them justice. You try to document your work so that others can understand it, and you try to engineer your work so that others can build on it. What’s more, you try to do all this against the relentless ticking of the project clock. You work small miracles every day."
+- There are a [lot of options out there](https://xkcd.com/927/), all of which claim to solve your problems. But there are no easy answers. There is no best something. There is only an appropriate solution to a problem.
+- This is about being pragmatic. Favour broad technological understanding over focusing only on one thing. Have wide experience base that helps you choose good solutions. Build understanding of basic principles of computer science and a wide range of practical projects.
+- You adjust your approach and judge the relative importance of all the factors affecting a project. And do this continuously. You get the job done, and do it well.
