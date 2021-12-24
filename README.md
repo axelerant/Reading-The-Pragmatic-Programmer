@@ -65,3 +65,5 @@ This is hard work. This is going to take time. But it is worth it. Spend time he
 
 ![Continuous Improvement](https://jamesclear.com/wp-content/uploads/2015/08/tiny-gains-graph.jpg)
 From [James Clear](https://jamesclear.com/continuous-improvement)
+
+[Chapter 1 ->](Chapter-1.md)
