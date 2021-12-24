@@ -32,3 +32,22 @@
 - There are a [lot of options out there](https://xkcd.com/927/), all of which claim to solve your problems. But there are no easy answers. There is no best something. There is only an appropriate solution to a problem.
 - This is about being pragmatic. Favour broad technological understanding over focusing only on one thing. Have wide experience base that helps you choose good solutions. Build understanding of basic principles of computer science and a wide range of practical projects.
 - You adjust your approach and judge the relative importance of all the factors affecting a project. And do this continuously. You get the job done, and do it well.
+
+## What makes a pragmatic programmer?
+
+Each individual is different. Over time, they will craft their own environment. But there are some characteristics you would share.
+
+- **Early adopter**: You have an instinct and love for trying things out. You can grasp them quickly and integrate it with your knowledge.
+- **Inquisitive**: You ask questions. You are curious and collect little facts about everything around you and this might be useful in a decision days later or years later.
+- **Critical thinker**: You don't take things as a given. You question and collect the facts. You try to understand the nature of the problem. You are realistic about challenges of a problem.
+- **Jack of all trades**: You try to be familiar with various technologies and work to keep updated. Even if you need to be a specialist on the job, you will always be able to pick up something new.
+
+### Tip 1: Care about your craft
+
+If you don't care about doing any job well, there is no point to it. The world has enough opportunities for you to be able to do what you want.
+
+### Tip 2: Think! About your work
+
+Think about what you're doing while you're doing it. Don't get on the auto-pilot mode. Constantly think why you are doing what you are doing. Critique your work. Question your decisions. And do it all the time.
+
+This is hard work. This is going to take time. But it is worth it. Spend time here ensures you learn and grow rather than repeat your work again because you didn't think about it.
