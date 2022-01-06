@@ -44,7 +44,30 @@
  - How do you react when someone - such as a bank teller, an auto mechanic, or a clerk-comes to you with a lame excuse? What do you think of them and their company as a result?
  - When you find yourself saying, "I don't know," be sure to follow it up with "-but I'll find out." It's a great way to admit what you don't know, but then take responsiblity like a pro.
 
+ ## Software Entropy
 
+ - Entropy - Amount of disorder in a system
+ - Naturally, entropy is bound to increase.
+ - Technical debt is just an optmistic term we use to give us an notion that we will work on it someday. We won't.
+ - Project Pyschology being one major factor that contribute to technical debt (or) software rot
+ - Projects with best plan and people experience ruin and projects with enormous difficulties and constant setbacks come out pretty well at end. Why?
 
+ ### Broken Windows
+
+ - Analogy of an building which starts to deteriorate  - it all starts with 1 broken window.
+ - A broken window left unrepaired gives a false sense of abondonment until it becomes real.
+ - Hopelessness can be contaigious in a community and in a team creating a vicious spiral.
+ - Broken window in software - bad designs, wrong decisions, poor code
+ - Neglect accelerates software rot faster than any other factor.
+ - Take some action to prevent further damage.
+ - Get a dumpster and trash what is not needed, fix what is needed.
+ - Cause no additional harm.
+ - One bad decision that the team needs to live with is all it takes for decline.
+ - It's all about the mindset - when everything is good in the project, no one wants to be the first to make a mess. On contrary, when there is already a lot of broken windows, you know what happens.
+
+### Challenges
+
+ - What are the broken windows in your projects? What can be done to fix them?
+ - Can you tell when a window first gets broken? If it is due to someone else decision, what can you do about it?
 
 [<- README](README.md)
