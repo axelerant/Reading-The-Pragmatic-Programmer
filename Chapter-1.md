@@ -38,6 +38,7 @@
  - Instead of excuses offer alternatives or options.
  - Don't blame anyone or anything.
  - There is nothing that can't be done. Find the way and costs associated with it.
+ - "You have the right not to take responsibility for an impossible situation, or one in which the risks are too great, or the ethical implications too sketchy. You’ll have to make the call based on your own values and judgement"
 
  ### Challenges
 
