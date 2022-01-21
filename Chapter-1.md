@@ -71,4 +71,36 @@
  - What are the broken windows in your projects? What can be done to fix them?
  - Can you tell when a window first gets broken? If it is due to someone else decision, what can you do about it?
 
+## Stone Soup and Boiled Frog
+
+- Story of the Stone Soup
+- Is it manipulation or deception? Is it similar to what we might call office politics?
+- "It's easier to ask for forgiveness than permission"
+- "People find it easier to join an ongoing success"
+
+> Be a catalyst for change
+
+### The negative side
+
+- Things just creep up on us.
+- Projects slowly get totally out of hand. Most software disasters start out too small to notice. Systems drift from their specs feature by feature.
+
+> Remember the Big Picture
+
+### Boiled Frog
+
+The authors of this book didn't try it but an author of another book did. :)
+
+- Opposite problem to that of what we saw in [Software Entropy](#software-entropy).
+- "Keep an eye on the big picture. Constantly review what's happening around you, not just what you are personall are doing."
+
+### Challenges
+
+- Are you causing benefit or harm?
+- Without looking, how many lights are in the ceiling? How many exits in the room? How many people? Get in the habit of really looking and noticing your surroudings.
+
+## Good-Enough Software
+
+_WIP_
+
 [<- README](README.md)
