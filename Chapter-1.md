@@ -117,10 +117,10 @@ The authors of this book didn't try it but an author of another book did. :)
  ### Involve Your Users in the Trade-Off
 
  - We usually focus on "what" they want but not on "how" good they want it to be?
- - Give your users to decide what is good enough for their needs.
+ - Give your users opportunity to decide what is good enough for their needs.
  - Let them choose the tradeoffs - of course with a lot of explanation
  - Sometimes there are no choices or tradeoffs to make and that is ok
- - With marketing promises, end user plans based on delivery schedule and company's cash flow constraints it is unprofessional to promise impossible time scales and cut basic engineering corners to meet a deadline.
+ - With marketing promises, end user plans based on delivery schedule and company's cash flow constraints, it is unprofessional to promise impossible time scales and cut basic engineering corners to meet a deadline.
  - Discuss the scope and quality of the system you produce as part of system requirements
 
  > Make Quality a Requirements Issue
@@ -141,7 +141,8 @@ The authors of this book didn't try it but an author of another book did. :)
         - have complex software and accept some bugs
         - opt for simpler software with fewer defects
  - Consider the effect of modularization on the delivery of software. Will it take more/less time to
-    - Get a tighly coupled monolithic software to the required quality (or)
+    - Get a tighly coupled monolithic software to the required quality 
+    (or)
     - System designed as a very loosely coupled modules or microservices
     - Advantages and Disadvantages of both?
  - Think of a popular software that suffers from feature bloat. Are you in danger of falling into this trap yourself?
