@@ -141,12 +141,26 @@ The authors of this book didn't try it but an author of another book did. :)
         - have complex software and accept some bugs
         - opt for simpler software with fewer defects
  - Consider the effect of modularization on the delivery of software. Will it take more/less time to
-    - Get a tighly coupled monolithic software to the required quality 
+    - Get a tighly coupled monolithic software to the required quality
     (or)
     - System designed as a very loosely coupled modules or microservices
     - Advantages and Disadvantages of both?
  - Think of a popular software that suffers from feature bloat. Are you in danger of falling into this trap yourself?
     - Feature bloat - containing more feature than you would ever use introducing more opportunity for bugs and security vulnerabilities
 
+## Your Knowledge Portfolio
+
+ > An investment to knowledge always pays the best interest - Benjamin Franklin
+
+ - The early bird might get the worm, but what happens to the early worm?
+ - Your knowledge and experience are your most important day-to-day professional assets
+ - Unfortunately these are expiring assets - knowledge with new technology/language/environment and experience with new market need
+ - Managing a knowledge portfolio is similar to managing a financial one
+    - Invest regularly
+    - Diversify
+    - Manage Risk
+    - Buy low, sell high
+    - Review and rebalance
+ - This is a skill which can be learned but you need to make it a habit to manage your knowledge portfolio
 
 [<- README](README.md)
