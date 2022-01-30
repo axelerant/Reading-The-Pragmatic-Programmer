@@ -101,6 +101,51 @@ The authors of this book didn't try it but an author of another book did. :)
 
 ## Good-Enough Software
 
-_WIP_
+ - Order of 100,000 IC chips 1 in 10,000 are defective. Imagine you get 1 large box with thousands of ICs and 1 small one with 10. Does this ever happen?
+ - The defects in your software does not show up itself and say here I am!
+ - Time, technology, and temperament all conspire against us to provide a perfect software.
+ - Good enough for your = More productivity and happier users
+    - Users
+    - Future maintainers
+    - Own peace of mind
+ - Good enough != sloppy or poorly produced code
+ - All system should meet
+    - user requirements
+    - basic performance, privacy and security standards
+ - We need to make our users understand that "everything cannot be perfect and there are always tradeoffs"
+
+ ### Involve Your Users in the Trade-Off
+
+ - We usually focus on "what" they want but not on "how" good they want it to be?
+ - Give your users to decide what is good enough for their needs.
+ - Let them choose the tradeoffs - of course with a lot of explanation
+ - Sometimes there are no choices or tradeoffs to make and that is ok
+ - With marketing promises, end user plans based on delivery schedule and company's cash flow constraints it is unprofessional to promise impossible time scales and cut basic engineering corners to meet a deadline.
+ - Discuss the scope and quality of the system you produce as part of system requirements
+
+ > Make Quality a Requirements Issue
+
+ - Great software today is often preferable to a fantasy of a perfect software tomorrow
+
+ ### Know When to Stop
+
+ - Programming is like painting, the painting becomes lost in the paint.
+ - Your perfectly good program may not be perfect, it could never be
+ - Do not get into the feature loop.
+
+ ### Challenges
+
+ - Look at the software tools and OS you use. Can you find evidence that these organizationa and their developers are comfortable shipping software they know is not perfect?
+    - As a user would you rather,
+        - wait for them to get all the bugs out
+        - have complex software and accept some bugs
+        - opt for simpler software with fewer defects
+ - Consider the effect of modularization on the delivery of software. Will it take more/less time to
+    - Get a tighly coupled monolithic software to the required quality (or)
+    - System designed as a very loosely coupled modules or microservices
+    - Advantages and Disadvantages of both?
+ - Think of a popular software that suffers from feature bloat. Are you in danger of falling into this trap yourself?
+    - Feature bloat - containing more feature than you would ever use introducing more opportunity for bugs and security vulnerabilities
+
 
 [<- README](README.md)
