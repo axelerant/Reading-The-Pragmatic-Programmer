@@ -162,5 +162,24 @@ The authors of this book didn't try it but an author of another book did. :)
     - Buy low, sell high
     - Review and rebalance
  - This is a skill which can be learned but you need to make it a habit to manage your knowledge portfolio
+ - Invest regularly
+    - Invest regularly, even if small amount
+    - Consistent time and pace, away from interruptions
+ - Diversify
+    - More different things you know, the more valuable you are.
+    - You need to know the ins and outs of your current technology, but don't stop there
+    - The more technologies you are comfortable with, the better you will be able to adjust to change
+    - Don't forget the non-technical skills you need
+ - Manage Risk
+    - Technology - Risky, potentially high-reward -> low-risk, low-reward standards
+    - Don't put all your eggs in one basket
+ - Buy low, sell high
+    - Learning an emerging technology might be challenging but it pays off well, rewarding
+ - Review and rebalance
+    - Brush up old skills if needed, review they why's of what you are learning
+> Invest Regularly in Your Knowledge Portfolio
+
+### Goals
+TODO
 
 [<- README](README.md)
