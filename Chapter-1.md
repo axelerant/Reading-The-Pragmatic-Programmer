@@ -152,34 +152,62 @@ The authors of this book didn't try it but an author of another book did. :)
 
  > An investment to knowledge always pays the best interest - Benjamin Franklin
 
- - The early bird might get the worm, but what happens to the early worm?
  - Your knowledge and experience are your most important day-to-day professional assets
  - Unfortunately these are expiring assets - knowledge with new technology/language/environment and experience with new market need
  - Managing a knowledge portfolio is similar to managing a financial one
     - Invest regularly
+      - Invest regularly, even if small amount
+      - Consistent time and pace, away from interruptions
     - Diversify
+      - More different things you know, the more valuable you are.
+      - You need to know the ins and outs of your current technology, but don't stop there
+      - The more technologies you are comfortable with, the better you will be able to adjust to change
+      - Don't forget the non-technical skills you need
     - Manage Risk
+      - Technology - Risky, potentially high-reward -> low-risk, low-reward standards
+      - Don't put all your eggs in one basket
     - Buy low, sell high
+      - Learning an emerging technology might be challenging but it pays off well, rewarding
     - Review and rebalance
+      - Brush up old skills if needed, review they why's of what you are learning
  - This is a skill which can be learned but you need to make it a habit to manage your knowledge portfolio
- - Invest regularly
-    - Invest regularly, even if small amount
-    - Consistent time and pace, away from interruptions
- - Diversify
-    - More different things you know, the more valuable you are.
-    - You need to know the ins and outs of your current technology, but don't stop there
-    - The more technologies you are comfortable with, the better you will be able to adjust to change
-    - Don't forget the non-technical skills you need
- - Manage Risk
-    - Technology - Risky, potentially high-reward -> low-risk, low-reward standards
-    - Don't put all your eggs in one basket
- - Buy low, sell high
-    - Learning an emerging technology might be challenging but it pays off well, rewarding
- - Review and rebalance
-    - Brush up old skills if needed, review they why's of what you are learning
 > Invest Regularly in Your Knowledge Portfolio
 
 ### Goals
-TODO
+
+What's the best way to acquire intelligence capital to fund your portfolio? Suggestions:
+- Learn a new language every year
+- Read a technical book each month
+- Read non-technical books, too
+- Take classes
+- Participate in local user groups and meetups
+- Experiment with different environments
+- Stay current
+
+It doesn't matter if you ever use these technologies. The process of learning will expand your thinking. Even if your project doesn't use that technology, you can borrow some ideas.
+
+### Opportunities for learning
+
+Someone asks you a question and you have no idea. Don't give up! Take this as an opportunity to learn. Find the answer, ask around, search the web, find out who might know the answer.
+
+This takes time, so plan.
+
+### Critical Thinking
+
+You need to ensure what you're learning is accurate. Don't be swayed but think critically.
+
+> Critically analyze what you read and hear
+
+- Ask the "Five Whys"
+- Who does this benefit?
+- What's the context?
+- When or Where would this work?
+- Why is this a problem?
+
+### Challenges
+
+- Start learning a new language this week.
+- Start reading a new book. Read a book that complements what you're doing now.
+- Get out and talk technology with people outside your current work/project.
 
 [<- README](README.md)
