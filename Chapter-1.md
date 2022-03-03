@@ -246,4 +246,83 @@ You need to ensure what you're learning is accurate. Don't be swayed but think c
  - Plan strategies on how you can influence and do some convincing if needed. It is important here we think about "What's in it for them, the reciever?"
  - Deliver what your audience wants as you would have discovered it in previous step.
 
+### Choose Your Moment
+
+ - Make sure what you're saying relevant in time, as well as in content.
+ - A manager who's just been given hard time by her boss because some source code got lost, would be a receptive listener to your ideas on source code repositories.
+ - Always ask the question "Is this a good time to talk about ... ?" wither to the reciever or sometimes to yourself.
+
+### Choose a Style
+
+ - Consider the style of communication the reciever would usually prefer
+  - "Just the facts" briefing
+  - Long, wide-ranging chat before getting down to business
+ - Skill level - Newbies, expert
+ - Do they need handholding or just a quick TL;DR
+ - If in doubt on any of the above, just ask.
+ - Be open to giving feedback if you think you cannot satisfy the expectations of the reciever.
+
+### Make it Look Good
+
+ - Ideas need a good looking vehicle to convey them to your audience.
+ - You can slave in kitchen, only to ruin your efforts with poor presentation.
+ - Developers and managers are solely focussed on only the content of the document.
+ - Use style sheets, check sample documents that use them, check spelling automatically and then manual.
+ - Know how to format your document, set headers and footers.
+
+### Involve Your Audience
+
+ - You can involve your audience once the inital draft of the document is ready
+ - Get feedback on the draft, ask questions
+ - Builds the relationships and produces better documents in the process
+
+### Be a Listener
+
+ - 1 technique to make people listen to you - Listen to them.
+ - Even if you know it all, listen to them.
+ - Encourage people to talk by asking questions, restate the discussion.
+ - Turn the meeting to a dialog, make it interesting and you will make your point.
+ - You might learn something new.
+
+### Get Back to People
+
+ - How will you feel if you ask somene a question and they didn't respond.
+ - Same applies to emails you recieve.
+ - Respond to emails in your busy life even if its "I'll get back to you later"
+ - Keeping people informed makes them feel you haven't forgotten them.
+
+ > It's Both What You Say and the Way You Say It
+
+ > Unless you work in a vacuum, you need to be able to communicate. The more effective it is, the more influential you become.
+
+### Documentation
+
+- Unfortunate necessity, treated as low priority task that management will hopefully forget at end of the project.
+- Keep documentation close to code, as comments.
+- Add comments not to each and every line which makes it painful.
+- Comments should cover only the Why part as the How is evident (violation of DRY principle).
+- Good comments tell you about engineering tradeoffs, why decisions were made, alternatives discarded.
+
+### Challenges
+
+ - Books to read in next 18 months
+  - The Mythical Man-Month
+  - Essays on Software Engineering
+  - Peopleware: Productive Projects and Teams
+  - Dinosaur Brains: Dealing with All Those Impossible People at Work
+ - Next time before you do a presentation, writing a email try working through about advise.
+ - Talk to your audience later and check how good your assessment was.
+
+### Online Communication
+
+ - Everything offline applies to online too
+ - Emails are main form. Some tips:
+  - Proofread before you hit SEND
+  - Check spelling, unwanted auto-corrections
+  - Quoting previous email should be minimum not to just reply back with "I Agree"
+  - Quote inline if necessary
+  - If you would not say it to their face, don't say it online
+  - Check list of CC before sending
+ - Email is same as a written memo or report. Give it the same importance. They are proofs!
+
 [<- README](README.md)
