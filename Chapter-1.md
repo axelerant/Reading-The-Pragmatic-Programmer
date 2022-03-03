@@ -210,4 +210,28 @@ You need to ensure what you're learning is accurate. Don't be swayed but think c
 - Start reading a new book. Read a book that complements what you're doing now.
 - Get out and talk technology with people outside your current work/project.
 
+## Communicate!
+
+ > I believe that it is better to be looked over than it is to be overlooked - Mae West, Belle of the Nineties, 1934
+
+ - It's not just what you've got, but also how you package it.
+ - A good idea is an orphan without effective communication.
+ - As developers, we
+   - Communicate our intentions to a machine via a programming language
+   - Document our thinking for future developers
+   - Status report, suggest new approaches
+ - We all know we spend a good amount of day in meetings, talking, listening to others.
+
+ > English is Just Another Programming Language
+
+ ### Know Your Audience
+
+ - Talking and Communicating are 2 different things.
+ - You're communicating only if the reciever recieved what you expect them to recieve.
+ - Needs, capabilities and interest of the audience is of paramount importance.
+ - The same enhancement would need to be communicated in different ways to end users, marketing, managers and finally developers.
+ - Look for body language, facial expressions and ask for feedback
+ - Improve the knowledge of your audience and apply it in your communication
+
+
 [<- README](README.md)
