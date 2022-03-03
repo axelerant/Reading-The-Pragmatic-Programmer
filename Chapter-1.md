@@ -229,9 +229,21 @@ You need to ensure what you're learning is accurate. Don't be swayed but think c
  - Talking and Communicating are 2 different things.
  - You're communicating only if the reciever recieved what you expect them to recieve.
  - Needs, capabilities and interest of the audience is of paramount importance.
+ - Know what your audience wants and align it with what you want to communicate.
  - The same enhancement would need to be communicated in different ways to end users, marketing, managers and finally developers.
  - Look for body language, facial expressions and ask for feedback
  - Improve the knowledge of your audience and apply it in your communication
 
+### Know What You Want to Say
+
+ - Working out what we want to say is most challenging part of formal communication
+ - For developers, things tend to flow directly from their heads to meetings and documentation
+ - We need to plan what we want to say by
+   - Write an outline
+   - Ask "Does this communicate what I want to express to my audience in a way that works for them?"
+   - Refine it until it does
+ - Above needs to be done for both meetings and documentation
+ - Plan strategies on how you can influence and do some convincing if needed. It is important here we think about "What's in it for them, the reciever?"
+ - Deliver what your audience wants as you would have discovered it in previous step.
 
 [<- README](README.md)
