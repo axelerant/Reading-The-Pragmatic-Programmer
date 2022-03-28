@@ -40,7 +40,7 @@
     - Second, reach out to your instincts.
     - Take a guess what kind of change would be needed in future and tag it in the code (as a comment)
     - So when the change happens, you can give feedback to yourself and it will help you in future fork in the road.
- - All other topics in this chapter are motivate by this one principle, ETC.
+ - All other topics in this chapter are motivated by this one principle, ETC.
 
  ### Challenges
 
