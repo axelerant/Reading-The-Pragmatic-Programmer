@@ -65,22 +65,53 @@
 
    ### Solution ?
 
-    - The only way to develop software reliably and to make our developments easier to maintain is to follow the DRY principle.
+   - The only way to develop software reliably and to make our developments easier to maintain is to follow the DRY principle.
 
-    > Every peice of knowledge must have a single, unambiguous, authoritative representation within a system.
+   > Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
 
-    > DRY - Don't Repeat Yourself
+   > DRY - Don't Repeat Yourself
 
-    - What happens when you do not follow DRY ?
+   - What happens when you do not follow DRY ?
       - You represent the same thing in 2 or more places in different ways (sometimes it even takes time to understand it is the same thing).
       - When you have to change in 1 place you have to remember to change in other places.
       - It is not a question if you will remember, it is a question of when you'll forget.
       - Your software will come to its knees with the wave of changes that happens in outside world with this duplication.
 
-   ### Dry is More Than Code
+   ### DRY is More Than Code
 
-    - DRY is not just about not copying source code or having same code in multiple places (authors correct from 1st edition).
-    - Code duplication is part of DRY but a very tiny part.
-    - It is more about not duplicating knowledge or intent.
+   - DRY is not just about not copying source code or having same code in multiple places (authors correct from 1st edition).
+   - Code duplication is part of DRY but a very tiny part.
+   - It is more about not duplicating knowledge or intent.
+
+   ### Duplication in Code
+
+   - Though trivial, it is so common.
+   - Let us look at below code.
+   ![Original Code](images/Original_code.jpg)
+   - What are the instances where DRY is violated?
+
+   1. Copy paste dupliction for handling negative numbers - fixing that,
+   ![DRY Change 1](images/DRY_change1.jpg)
+   2. Repetition of field width specification in each printf call. Fixing that using existing function,
+   ![DRY Change 2](images/DRY_change2.jpg)
+   3. What if we need an extra space between the field labels and numbers? We need to change in each printf. Fixing that,
+   ![DRY Change 3](images/DRY_change3.jpg)
+
+   - Result?
+      - Want to change number format - change format_amount function.
+      - Want to change label format or spacing - change report_line function.
+
+   ### Not all Code Duplication is Knowledge Duplication
+
+   - Below is an example of an false positive.
+   ![DRY False Positive](images/false_positive.jpg)
+
+   - Though the code is same in above definitions, we are validating 2 differetent real world entities that might have different set of things to be done in future.
+   - It is just coincidence we are doing same thing with age and quantity at present. It may not stay the same in future.
+
+   ### Duplication in Documentation
+
+
+
 
 
