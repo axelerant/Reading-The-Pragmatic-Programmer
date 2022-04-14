@@ -122,7 +122,22 @@
    - Above avoids changing in 2 places, once in code and again in comments and mostly we miss changing comments.
 
    ### DRY violations in Data
-   TODO
+
+   - Data Structures represent knowledge and that could also violate DRY principle.
+
+   - Snippet of Class with some properties:
+   ![DRY Data 1](images/DRY_data1.jpg)
+
+   - At 1st sight, above class look fine.
+   - But, can we not derive length from other two properties?
+   ![DRY Data 2](images/DRY_data2.jpg)
+
+   - There might be concerns that this might not allow the data to cache and result in poor performance.
+   - To mitigate that, keep the impact local by using private modifiers so that the code outside the class does not know that this is calculated each time.
+   ![DRY Local Impact](images/DRY_local_impact.jpg)
+
+   - In above example, we are still coupling the code that uses a structure to implementation of the module.
+   - Try to use accessor functions wherever possible. This will make future changes easier. ETC!
 
    ### Representational Duplication
    TODO
