@@ -90,7 +90,7 @@
    ![Original Code](images/Original_code.jpg)
    - What are the instances where DRY is violated?
 
-   1. Copy paste dupliction for handling negative numbers - fixing that,
+   1. Copy paste duplication for handling negative numbers - fixing that,
    ![DRY Change 1](images/DRY_change1.jpg)
    2. Repetition of field width specification in each printf call. Fixing that using existing function,
    ![DRY Change 2](images/DRY_change2.jpg)
@@ -111,7 +111,24 @@
 
    ### Duplication in Documentation
 
+   - **Myth**: You should comment all your functions.
+   - No. Not required. Identify DRY violation in below snippet.
+   ![DRY Documentation](images/DRY_documentation.jpg)
 
+   - Fix:
+   ![DRY Documentation fix](images/DRY_documentation_fix.jpg)
+
+   - When code is readable, comments are redundant.
+   - Above avoids changing in 2 places, once in code and again in comments and mostly we miss changing comments.
+
+   ### DRY violations in Data
+   TODO
+
+   ### Representational Duplication
+   TODO
+
+   ### Interdeveloper Duplication
+   TODO
 
 
 
