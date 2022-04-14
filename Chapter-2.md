@@ -139,6 +139,9 @@
    - In above example, we are still coupling the code that uses a structure to implementation of the module.
    - Try to use accessor functions wherever possible. This will make future changes easier. ETC!
 
+   - Meyer's Uniform Access Principle
+   > All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation.
+
    ### Representational Duplication
    TODO
 
