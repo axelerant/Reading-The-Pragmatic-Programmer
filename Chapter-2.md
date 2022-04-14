@@ -48,3 +48,39 @@
   - Also think about languages and programming paradigms (OO, FP, Reactive, and so on). Do any have either big positives or big negatives when it comes to helping you write ETC code? Do any have both?
     - When coding, what can you do to eliminate the negatives and accentuate the positives?
   - Many editors have support (either built-in or via extensions) to run commands when you save a file. Get your editor to popup an ETC? message every time you save (or 10th time) and use it as a cue to think about the code you just wrote. Is it easy to change?
+
+  ## DRY - The Evils of Duplication
+
+   - Best way to disabling a marauding artificial intelligence - give 2 pieces of contradicting knowledge to a computer.
+   - Same principle is effective in bringing down your code.
+   - Programmers collect, organize, maintian and harness knowledge.
+   - Knowledge is documented in specifications, comes alive in code and used to validate things in testing.
+   - Knowledge isn't stable. It changes very frequently after a meeting with client, when regulations change and when we know the approach we have chosen does not work.
+   - When it changes, you re-organize and re-express it in some form which is true at that time.
+   - Maintenance is not a discrete activity that happens post production with just bug fixes and enhancements but a routine part of development process.
+   - Maintenance happens each day long before the application is fully developed and released to the end customer.
+   - You maintain knowledge from day 1 of project either knowingly or unknowingly.
+   - When we maintain we need to find and change what you have earlier done - code, documentation, API, etc...
+   - We invite a maintenance nightmare by doing the easiest thing to do - duplicate knowledge in multiple places.
+
+   ### Solution ?
+
+    - The only way to develop software reliably and to make our developments easier to maintain is to follow the DRY principle.
+
+    > Every peice of knowledge must have a single, unambiguous, authoritative representation within a system.
+
+    > DRY - Don't Repeat Yourself
+
+    - What happens when you do not follow DRY ?
+      - You represent the same thing in 2 or more places in different ways (sometimes it even takes time to understand it is the same thing).
+      - When you have to change in 1 place you have to remember to change in other places.
+      - It is not a question if you will remember, it is a question of when you'll forget.
+      - Your software will come to its knees with the wave of changes that happens in outside world with this duplication.
+
+   ### Dry is More Than Code
+
+    - DRY is not just about not copying source code or having same code in multiple places (authors correct from 1st edition).
+    - Code duplication is part of DRY but a very tiny part.
+    - It is more about not duplicating knowledge or intent.
+
+
