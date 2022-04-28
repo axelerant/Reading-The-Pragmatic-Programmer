@@ -171,7 +171,25 @@
       - In addition to above do validations that will make sure you are getting the data you expect as key/value data structure stores any data type.
 
    ### Interdeveloper Duplication
+
+   - Hardest type of duplication to detect
+   - Entire sets of functionalities would be duplicated between developers and would go undetected for years
+   - In a audit in US, it was found that there were 10,000 programs that contained a different version of Social Security Number validation code.
+   ![Shocked emoji](images/shocked-emoji-smiley.png)
+
+   - How to solve this?
+      - At a high level, build a strong, tight-knit team with **good communications**
+      - At a module level, it is challenging as common functionalities or data does not fall into as a single person responsibility (that is why it is common)
+      - Best way to deal with this is again encouraging active and frequent communication between developers in the team.
+      - Can be best achieved by knowledge sharing and we can identify common areas and work together to avoid duplicated knowledge.
+      - An good example is discourse we have at Axelerant where common problems and solutions are available.
+      - Look into other people code when needed if there is commonality and also be open when others' would want to look at your code. We are sharing and improving our knowledge.
+
+   > Make it Easy to Reuse
+
+      - If it isn't easy, people would not do it.
+      - If you fail to reuse, you risk duplicating knowledge.
+
+   ## Orthogonality
    TODO
-
-
 
