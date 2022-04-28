@@ -175,6 +175,7 @@
    - Hardest type of duplication to detect
    - Entire sets of functionalities would be duplicated between developers and would go undetected for years
    - In a audit in US, it was found that there were 10,000 programs that contained a different version of Social Security Number validation code.
+
    ![Shocked emoji](images/shocked-emoji-smiley.png)
 
    - How to solve this?
