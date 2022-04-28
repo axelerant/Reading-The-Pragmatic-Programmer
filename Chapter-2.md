@@ -143,7 +143,32 @@
    > All services offered by a module should be available through a uniform notation, which does not betray whether they are implemented through storage or through computation.
 
    ### Representational Duplication
-   TODO
+
+   - Our code interacts with outside world libraries via APIs, services via remote calls, gets data from external sources and so on.
+   - For all the above your code (and the external thing you communicate with) needs to be in sync with the knowledge of how to communicate (schema) and what the error codes mean?
+   - This gives a chance for DRY violation as the same knowledge is duplicated in your code and also in the external thing.
+   - Changing any one breaks the other.
+   - Though this duplication is inevitable, it can be mitigated by following strategies.
+
+   #### Duplication Across Internal APIs
+
+   - Identify tools that will generate documentation automatically from your code (which would be neutral)
+   - These tools can be used to create functional tests, API clients in different languages to test your API
+   - Creates a shared repository which can be used by external world and once you change anything in your API the tool will get updated automatically
+
+   #### Duplication Across External APIs
+
+   - Use OpenAPI specification to get information about public APIs
+   - This provides a language agnostice way (or) a common syntax for APIs in different languages to understand the API and communicate with it
+   ![OpenAPI Definition](images/OpenAPI.jpg)
+   - If you don't find an OpenAPI specification, create and publish it.
+
+   #### Duplication with Data Sources
+
+   - Create containers to store data from external data source using their schema.
+   - Another option is to
+      - Instead of representing external data in fixed structure like struct, class using key/value data structure will make flexible.
+      - In addition to above do validations that will make sure you are getting the data you expect as key/value data structure stores any data type.
 
    ### Interdeveloper Duplication
    TODO
