@@ -192,5 +192,59 @@
       - If you fail to reuse, you risk duplicating knowledge.
 
    ## Orthogonality
+
+   - Critical concept to produce systems that are easy to design, build, test and extend.
+   - Causes immediate improvements in quality of systems if applied directly.
+
+   ### What is Orthogonality?
+
+   ![Orthogonality](images/Perpendicular-coloured.svg)
+
+   - 2 lines are orthogonal if they meet at right angles (90 degrees)
+   - In computing, it denotes independence or decoupling
+   - Two or more things are orthogonal, if changes in one does not affect any of the others.
+   - E.g. Database logic and User interface
+   - Real word example: Helicopter controls are decidedly not orthogonal.
+
+   ### Benefits of Orthogonality
+
+   > Eliminate Effects Between Unrelated Things
+
+   - Nonorthogonal systems are inherently more complex to change and control as changing one thing breaks lot of others.
+   - Components to be:
+      - self-contained: does not depend on other components to achieve its purpose and hence can function independently by its own.
+      - single well defined purpose: single responsibility principle
+   - Any change in component does not affect the external system and we need to test only that component.
+   - We need to be careful only when we change the external interfaces of the component (how it communicates with other components)
+
+   #### Gain Productivity
+
+   - Localised changes, so development and testing time reduced
+   - Easier to write small peices of code that performs a unique functionality and test it rather than writing large lines of code that performs a lot
+   - Need more funtionality? Add new component rather than changing existing code
+   - Produces loosely coupled systems that are easy to reegineer and reconfigure
+   - Allows you to innovate
+   - 2 orthogonal components that does M and N unique things when combined produces M*N functionalities rather than 2 nonorthogonal components which has overlaps and hence less functionalities
+
+   #### Reduce Risk
+
+   - If a component/module is sick it is already isolated as per design and we can focus on that alone and replace it
+   - Resulting system is less fragile as any changes only affects that component
+   - Easy to create and run tests as you need to do that only for 1 component and not for entire system
+   - Not tighly tied to third part vendors as intefaces to these components are isolated and can be changed easily
+
+   ### How to apply Orthogonality?
+   ### Design
    TODO
 
+   ### Toolkits and Libraries
+   TODO
+
+   ### Coding
+   TODO
+
+   ### Testing
+   TODO
+
+   ### Documentation
+   TODO
