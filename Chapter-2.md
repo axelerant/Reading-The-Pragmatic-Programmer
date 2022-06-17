@@ -251,10 +251,13 @@
    - How do you test if a design is orthogonal?
       - After you mapped out what components you are going to have in your system, ask the following question.
 
+
       > If I dramatically change the requirements behind a particular function, how many modules are affected?
 
       - In an orthogonal system, the answer should be one.
-      - Though above is naive and in real world requirements any change will affect more than one module, if you split up the change in terms of functional requirements then each requirement should ideally affect just 1 module.
+      - Though above is naive and in real world requirements any change will affect more than one module.
+      - However if you split up the change in terms of functional requirements then each requirement should ideally affect just 1 module.
+
 
    ### Toolkits and Libraries
    TODO
