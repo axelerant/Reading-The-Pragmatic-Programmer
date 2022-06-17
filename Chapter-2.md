@@ -235,7 +235,26 @@
 
    ### How to apply Orthogonality?
    ### Design
-   TODO
+   - Developers use the words modular, component-based and layered to denote the process of creating orthogonal systems (we just don't know these mean orthogonality though we use them).
+
+   - What is an orthogonal system?
+      - One that is composed of a set of cooperating modules/components, each of which implements functionality independent of others.
+
+   - Layering
+      - Independent components organized into layers each providing a level of abstraction.
+      - Each layer uses the abstractions provided by above layer and is not aware of what exactly it is doing.
+      - This allows us to change implementations without affecting code.
+      - Reduces the risk of runaway(out of control, challenging to detect) dependencies between modules.
+      - Usually denoted via diagrams as given below.
+      ![Layering](images/layering.png)
+
+   - How do you test if a design is orthogonal?
+      - After you mapped out what components you are going to have in your system, ask the following question.
+
+      > If I dramatically change the requirements behind a particular function, how many modules are affected?
+
+      - In an orthogonal system, the answer should be one.
+      - Though above is naive and in real world requirements any change will affect more than one module, if you split up the change in terms of functional requirements then each requirement should ideally affect just 1 module.
 
    ### Toolkits and Libraries
    TODO
