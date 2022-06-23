@@ -238,7 +238,7 @@
    - Developers use the words modular, component-based and layered to denote the process of creating orthogonal systems (we just don't know these mean orthogonality though we use them).
 
    #### What is an orthogonal system?
-      - One that is composed of a set of cooperating modules/components, each of which implements functionality independent of others.
+   - One that is composed of a set of cooperating modules/components, each of which implements functionality independent of others.
 
    #### Layering
    - Independent components organized into layers each providing a level of abstraction.
@@ -271,10 +271,26 @@
    > Don't rely on the properties of things you can't control.
 
    ### Toolkits and Libraries
-   TODO
+   - Important to preserve orthgonality of your system as you introduce third party toolkits and libraries.
+   - Choose your technologies wisely.
+   - When bringing in toolkit (or library) from external world or even internal (other member of your team/organization) ask yourself whether it imposes changes on your code that shouldn't be there.
+   - For example, let us say you need to tweak the way you send input to meet the requirements of an external service.
+   - What happens if the external service change their input parameters in next release?
+   - Better to have such third party dependent code isolated from your actual system so that you can at least identify them easily. Better do the tweak in external service itself (colloborate with author).
+   - Author gives example of Enterprise Java Beans (EJB) where transactions start and end are denoted via annotations rather than embedding them into the application code. This allows the same code to be used in different transactions.
+   - Above is an example of Decorator pattern: adding functionality to things without changing them.
 
    ### Coding
-   TODO
+   - Every time to write code you run the risk on reducing the orthogonality of your system.
+   - You need to constantly monitor the larger context of the system rather than being focussed on the current "what you are doing" aspect.
+   - Otherwise there is good chance you will repeat knowledge already existing.
+
+   #### Techniques to maintain orthogonality
+   #### Keep your code decoupled
+
+   #### Avoid global data
+
+   #### Avoid similar functions
 
    ### Testing
    TODO
