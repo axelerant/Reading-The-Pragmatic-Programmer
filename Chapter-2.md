@@ -241,12 +241,13 @@
       - One that is composed of a set of cooperating modules/components, each of which implements functionality independent of others.
 
    #### Layering
-      - Independent components organized into layers each providing a level of abstraction.
-      - Each layer uses the abstractions provided by above layer and is not aware of what exactly it is doing.
-      - This allows us to change implementations without affecting code.
-      - Reduces the risk of runaway(out of control, challenging to detect) dependencies between modules.
-      - Usually denoted via diagrams as given below.
-      ![Layering](images/layering.png)
+   - Independent components organized into layers each providing a level of abstraction.
+   - Each layer uses the abstractions provided by above layer and is not aware of what exactly it is doing.
+   - This allows us to change implementations without affecting code.
+   - Reduces the risk of runaway(out of control, challenging to detect) dependencies between modules.
+   - Usually denoted via diagrams as given below.
+
+   ![Layering](images/layering.png)
 
    #### How do you test if a design is orthogonal?
    - After you mapped out what components you are going to have in your system, ask the following question.
@@ -258,12 +259,12 @@
    - However if you split up the change in terms of functional requirements then each requirement should ideally affect just 1 module.
 
    #### Example:
-      - System for monitoring and controlling a heating plant.
-      - The original requirement to have a Graphical UI was changed to have a mobile UI so that engineers can monitor key values on the move.
-      - In an orthogonal system what would you expect to be changed ?
-         - Only those modules associated with UI/FE design would need to be changed not the actual logic to calculate the key values.
+   - System for monitoring and controlling a heating plant.
+   - The original requirement to have a Graphical UI was changed to have a mobile UI so that engineers can monitor key values on the move.
+   - In an orthogonal system what would you expect to be changed ?
+   - Only those modules associated with UI/FE design would need to be changed not the actual logic to calculate the key values.
 
-   - As yourself below question.
+   - Ask yourself below question.
       - How decoupled your design is from changes in the real world?
       - Are you using telephone number, postal codes, government IDs as customer identifier? What happens when they change?
 
