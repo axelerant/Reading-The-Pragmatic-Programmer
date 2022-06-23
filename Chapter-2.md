@@ -251,13 +251,23 @@
    - How do you test if a design is orthogonal?
       - After you mapped out what components you are going to have in your system, ask the following question.
 
-
-      > If I dramatically change the requirements behind a particular function, how many modules are affected?
+   > If I dramatically change the requirements behind a particular function, how many modules are affected?
 
       - In an orthogonal system, the answer should be one.
       - Though above is naive and in real world requirements any change will affect more than one module.
       - However if you split up the change in terms of functional requirements then each requirement should ideally affect just 1 module.
 
+   - Example:
+      - System for monitoring and controlling a heating plant.
+      - The original requirement to have a Graphical UI was changed to have a mobile UI so that engineers can monitor key values on the move.
+      - In an orthogonal system what would you expect to be changed ?
+         - Only those modules associated with UI/FE design would need to be changed not the actual logic to calculate the key values.
+
+   - As yourself below question.
+      - How decoupled your design is from changes in the real world?
+      - Are you using telephone number, postal codes, government IDs as customer identifier? What happens when they change?
+
+   > Don't rely on the properties of things you can't control.
 
    ### Toolkits and Libraries
    TODO
