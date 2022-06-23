@@ -283,17 +283,41 @@
    ### Coding
    - Every time to write code you run the risk on reducing the orthogonality of your system.
    - You need to constantly monitor the larger context of the system rather than being focussed on the current "what you are doing" aspect.
-   - Otherwise there is good chance you will repeat knowledge already existing.
+   - Otherwise there is good chance you will repeat knowledge already existing knowledge.
 
    #### Techniques to maintain orthogonality
    #### Keep your code decoupled
+   - Write shy code - modules that don't reveal anything unnecessary to other modules and that don't rely on other modules' implementations.
+   - e.g. If you need to change an object's state, get the object to do it for you.
 
    #### Avoid global data
+   - Every time your code references global data, it ties itself into the other components that share that data.
+   - Even read only global data can cause trouble. e.g. if you want your application to be multithreaded.
+   - Suggestion way is to pass any context needed for your module (i.e.) passing parameters to constructors in OOP
+   - Be careful when using Singleton objects as global variables (done in Java that do not support globals) as it can also lead to unnecessary linkage.
 
    #### Avoid similar functions
+   - Avoid functions which has similar start and end but different central algorithm.
+   - Duplicate code is symptom of structural problems.
+   - Author suggests to check [Strategy pattern](https://en.wikipedia.org/wiki/Strategy_pattern).
 
    ### Testing
-   TODO
+   - An orthogonally designed and implemented system is easier to test.
+   - Testing can be done more at module/unit level rather than doing an integration testing as each module is independent and if they work then entire system works.
+   - Author suggests to automate this testing in build process (CI/CD).
+   - Writing unit tests will expose non-orthogonal code as you will know if you need to pull in large percentage of rest of your code (outside of the unit you are testing).
+   - Bug fixing also reveals orthogonality as based on the fact that fix given is how local or you need to change a lot of modules/entire system?
+   - Also when you fix a bug does it fix the bug or cause other regression?
+   - You can automate to run monthly reports to check how each bug fix changes your code and to what extent? You need to tag your repo for each bug fix.
 
    ### Documentation
+   - Yes! Orthogonality also applies to documentation.
+   - The axes are content and presentation.
+   - Does changing the presentation of your document require changing content?
+   - Best example is this... yes this.. Markdown (md) where we focus only on content and presentation is taken care by itself.
+
+   ### Living with Orthogonality
+   TODO
+
+   ### Challenges
    TODO
