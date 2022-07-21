@@ -283,7 +283,7 @@
    ### Coding
    - Every time to write code you run the risk on reducing the orthogonality of your system.
    - You need to constantly monitor the larger context of the system rather than being focussed on the current "what you are doing" aspect.
-   - Otherwise there is good chance you will repeat knowledge already existing knowledge.
+   - Otherwise there is good chance you will repeat already existing knowledge (DRY) which is birthplace of non-orthogonal systems.
 
    #### Techniques to maintain orthogonality
    #### Keep your code decoupled
@@ -293,7 +293,7 @@
    #### Avoid global data
    - Every time your code references global data, it ties itself into the other components that share that data.
    - Even read only global data can cause trouble. e.g. if you want your application to be multithreaded.
-   - Suggestion way is to pass any context needed for your module (i.e.) passing parameters to constructors in OOP
+   - Suggested way is to pass any context needed for your module (i.e.) passing parameters to constructors in OOP
    - Be careful when using Singleton objects as global variables (done in Java that do not support globals) as it can also lead to unnecessary linkage.
 
    #### Avoid similar functions
@@ -317,7 +317,22 @@
    - Best example is this... yes this.. Markdown (md) where we focus only on content and presentation is taken care by itself.
 
    ### Living with Orthogonality
-   TODO
+   - Orthgonality is closely related to DRY as we have seen.
+      - DRY - Reduce duplication in the system.
+      - Orthogonality - Reduce interdependency in the system (which is easy if DRY is followed)
+   - When using together they create systems that are more flexible, more understandable, easy to debug, test and maintain.
+   - If you are in a project where people try to chaneg things and every change causes 4 other things to break - then its time to refractor a non-orthogonal system.
 
    ### Challenges
-   TODO
+   - Consider the difference between tools which have a graphical user interface and small but combinable command-line utilities used at shell prompts.Which set is more orthogonal, and why? Which is easier to use for exactly the purpose for which it was intended? Which set is easier to combine with other tools to meet new challenges? Which set is easier to learn?
+      - Editors like VSCode, PHPStorm, Eclipse
+
+   - C++ supports multiple inheritance, and Java allows a class to implement multiple interfaces. Ruby has mixins. What impact does using these facilities have on orthogonality? Is there a difference in impact between using multiple inheritance and multiple interfaces? Is there a difference between using delegation and usig inheritance?
+
+   ### Exercises
+   #### Exercise 1
+
+   ![Exercise 1](images/Exercise1-ortho.png)
+
+   #### Exercise 2
+   - What are the differences in orthogonality between object-oriented and functional languages? Are these differences inherent in the languages themselves, or just the way people use them?
