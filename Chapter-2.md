@@ -332,7 +332,7 @@
    ### Exercises
    #### Exercise 1
 
-   ![Exercise 1](images/Exercise1-ortho.png)
+   ![Exercise 1](images/ortho.png)
 
    #### Exercise 2
    - What are the differences in orthogonality between object-oriented and functional languages? Are these differences inherent in the languages themselves, or just the way people use them?
