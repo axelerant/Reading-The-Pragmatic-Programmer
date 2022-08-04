@@ -321,13 +321,13 @@
       - DRY - Reduce duplication in the system.
       - Orthogonality - Reduce interdependency in the system (which is easy if DRY is followed)
    - When using together they create systems that are more flexible, more understandable, easy to debug, test and maintain.
-   - If you are in a project where people try to chaneg things and every change causes 4 other things to break - then its time to refractor a non-orthogonal system.
+   - If you are in a project where people try to change things and every change causes 4 other things to break - then its time to refractor a non-orthogonal system.
 
    ### Challenges
    - Consider the difference between tools which have a graphical user interface and small but combinable command-line utilities used at shell prompts.Which set is more orthogonal, and why? Which is easier to use for exactly the purpose for which it was intended? Which set is easier to combine with other tools to meet new challenges? Which set is easier to learn?
       - Editors like VSCode, PHPStorm, Eclipse
 
-   - C++ supports multiple inheritance, and Java allows a class to implement multiple interfaces. Ruby has mixins. What impact does using these facilities have on orthogonality? Is there a difference in impact between using multiple inheritance and multiple interfaces? Is there a difference between using delegation and usig inheritance?
+   - C++ supports multiple inheritance, and Java allows a class to implement multiple interfaces. Ruby has mixins. What impact does using these facilities have on orthogonality? Is there a difference in impact between using multiple inheritance and multiple interfaces? Is there a difference between using delegation and using inheritance?
 
    ### Exercises
    #### Exercise 1
@@ -336,3 +336,26 @@
 
    #### Exercise 2
    - What are the differences in orthogonality between object-oriented and functional languages? Are these differences inherent in the languages themselves, or just the way people use them?
+
+   ## Reversibility
+
+   > Nothing is more dangerous than an idea if it's the only one you have.
+
+   - Engineers prefer simple, singular solutions to problems.
+   - Management tends to agree with the engineers: singular, easy answers fit nicely on spreadsheets and project plans.
+   - If only the real world would cooperate!
+   - If you rely heavily on some fact, you can almost guarantee that it will change.
+   - There is always more than 1 way to implement anything.
+   - More than 1 vendor who can provide a third party product.
+   - More than 1 solution to any problem.
+   - Unless you accept above, you may be in for an unpleasant surprise.
+
+   > But you said we'd use database XYZ! We are 85% done coding the project, we can't change now!" the programmer protested. "Sorry, but your company decided to standardize on database PDO instead-for all projects. It's out of my hands. We'll just have to recode. All of you will be working weekends until further notice."
+
+   - With every critical decision, the project team commits to a smaller target-a narrower version of reality that has fewer options.
+   - By the time many critical decisions have been made, the target becomes so small that if it moves, or the wind changes direction, or a butterfly in Tokyo flaps its wings, you miss. An you may miss by a huge amount.
+   - The problem is that critical decision aren't easily reversible.
+   - E.g. once you decide to use this vendor's database, or that architectural pattern, or a certain deployment model, you are committed to a course of action that cannot be undone, except at great expense.
+
+   ## So what is reversibility?
+   - Will see in next session :)
