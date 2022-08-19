@@ -357,5 +357,38 @@
    - The problem is that critical decision aren't easily reversible.
    - E.g. once you decide to use this vendor's database, or that architectural pattern, or a certain deployment model, you are committed to a course of action that cannot be undone, except at great expense.
 
-   ## So what is reversibility?
-   - Will see in next session :)
+   ### So what is reversibility?
+   - Author points out that many topics in the book are geared to producing feasible, adaptable software
+   - By following the below in this book, we don't have to make as many critical, irreversibe decisions.
+      - DRY principle
+      - Decoupling
+      - use of external configuration
+   - Not making irreversible decisions is good as we don't always make the best decisions the first time
+   - Requirements, users, hardware change faster than we can get the software developed.
+   - Example of making changes that are usually irrevesible:
+      - Changing from relational to document database once you find out that the relational is too slow to cater user needs.
+      - Starting the project as browser based app but marketing decides it needs to be mobile app.
+   - The mistake lies in assuming that any decision is cast in stone-and in not preparing for the contingencies that might arise.
+   - Software decisions are not carved in stone but in sand where a big wave can wipe it out anytime.
+
+   > There Are No Final Decisions
+
+   ### Flexible Architecture
+   - Below are some "best practice" server-side architectures:
+      - Big hunk of iron
+      - Federations of big iron
+      - Load-balanced clusters of commodity hardware
+      - Cloud-based virtual machines running applications
+      - Cloud-based virtual machines running services
+      - Containerized versions of the above
+      - Cloud-supported serverless applications
+      - And, inevitably, an apparent move back to big hunks of iron for some tasks
+
+   - It's a miracle that anything ever worked.
+   - So how can you plan for this kind of architectural volatality? You can't.
+
+   - But you can make your application easy to change (ETC again):
+      - Break code into components even if deployed to single server. This approach is easier than splitting an monolithic application later on.
+      - Hide third party API's behind your own abstraction layers
+   - No one knows what the future may hold, especially not us !
+   - So enable rock-n-roll: to "rock-on" when it can, to roll with the punches when it must.
