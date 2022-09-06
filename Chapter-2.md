@@ -392,3 +392,41 @@
       - Hide third party API's behind your own abstraction layers
    - No one knows what the future may hold, especially not us !
    - So enable rock-n-roll: to "rock-on" when it can, to roll with the punches when it must.
+
+   ## Tracer Bullets
+
+   > Ready, fire, aim... - Anon
+
+   ### What are they?
+   - We talk about hitting targets when we develop software.
+   - Though we are not firing anything at the shooting range, it's a useful and very visual metaphor.
+   - It's interesting to consider _how_ to hit a target in a complex and shifting world like software development.
+
+   - Whether you hit the target of course depends a lot on the nature of device you aim with.
+   - Usually you hit and then see if you have got the target but there is a better way.
+
+   - Author refers to movies, video games and TV shows where when people hit with guns we see a visible path of bullets as bright streaks in the air.
+   - These visible streaks in air comes from tracer bullets which are loaded in intervals along with regular ammunition.
+
+   - Why tracer bullets?
+      - Real time immediate feedback to soliders to refine their aim
+      - Again, a pragmatic approach
+
+   - Same applies to software projects, particularly when you're building something that hasn't been built before.
+      - On a side note, sometimes we think we are just putting pieces together in software but note that the way we put them together is unique and hence we end up creating unique systems.
+   - We use the term _tracer bullet development_ to visually illustrate the need for immediate feedback under actual conditions with a moving goal.
+
+   - What are the moving goals?
+      - Since your users have not seen anything like what you are developing, the requirements may be vague or may change.
+      - You maybe using algorithms, techniques, languages, or libraries you aren't familiar with as a result there are many unknowns.
+      - Projects take time to complete and hence the environment/platform you are working on may change before you're done.
+
+   - What is the classic response to this?
+      - Write out every requirement freeze them
+      - Trying to grasp every known unknown and avoiding unknown unknowns as if they are not there.
+      - Constraining ourselves to a type of environment
+      - One big calculation upfront, then shoot and hope nothing changes.
+   - Result?
+      - Create a system that dies eventually
+
+   - Pragmatic Programmers, tend to prefer using the software equivalent of tracer bullets.
