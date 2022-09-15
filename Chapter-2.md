@@ -430,3 +430,48 @@
       - Create a system that dies eventually
 
    - Pragmatic Programmers, tend to prefer using the software equivalent of tracer bullets.
+
+   ### Code That Glows in the Dark
+   - Tracer bullets operate in same environment with same constraints as real bullets.
+   - Immediate feedback to the gunner.
+
+   - To get similar effect in code, we look for something that gets us from requirement to some aspect of final system quickly, visibly, and repeatably.
+
+   - How to do this in code?
+      - Look for important requirements of the system - the Must Haves to start with
+      - Look for the grey areas which has the huge risk of implementation
+   - Then, prioritize your development so that these are the first areas you code.
+
+   > Use Tracer Bullets to Find the Target
+
+   - The very first tracer bullet is Hello World
+   - Then built the skeleton of the system which is needed
+
+   #### An example
+   ![Architectural Layers](images/architectural_layers.jpg)
+
+   - Above system has five architectural layers.
+   - To understand how we can integrate them, we do a simple feature that uses all the layers.
+   - The diagonal line shows the path that feature takes through the code.
+   - To make the feature work, we need to just implement the solidly shaded areas in the diagram and the stuff with the squiggles will be done later.
+
+   Below is an example,
+   - Assume a complex client-server database marketing project.
+   - Part of the requirement was ability to specify and execute [temporal queries](https://blog.devgenius.io/a-query-in-time-introduction-to-sql-server-temporal-tables-145ddb1355d9).
+   - DB servers were a range of relational and specialized databases.
+   - Client UI written in random language A, used set of libraries written in different language provide interface to the servers.
+   - User's query stored on the server in a Lisp-like notation before being converted to optimized SQL prior to execution.
+   - Many unknowns, many environments and no one was too sure how the UI should behave.
+
+   - Above is a great opportunity to use tracer code by,
+      - Developed a framework for the front end, libraries representing the queries.
+      - Structure for converting a stored query into a DB specific query.
+   - Then, it above together and checked that it worked.
+   - Wrote a query to fetch rows from table with above structure and it worked.
+   - This proves that the UI could talk to libraries, libraries could serialize and de-serialize the queries and the corresponding databases can infact retireve the results for the query.
+   - Over few months more types of queries where added and the library was enhanced
+
+   - Tracer code is not disposable rather you keep it in the final system
+   - It contains all error checking, structuring, documentation and self-checking that any production code has.
+   - Only difference is that it is not fully functional.
+   - You achieve an end to end connection among the different components or parts of the system and build on top of that.
