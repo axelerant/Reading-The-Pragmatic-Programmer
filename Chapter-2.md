@@ -475,3 +475,84 @@
    - It contains all error checking, structuring, documentation and self-checking that any production code has.
    - Only difference is that it is not fully functional.
    - You achieve an end to end connection among the different components or parts of the system and build on top of that.
+
+   - Idea behind Tracer development is:
+      - a project is never finished
+      - there will always be changes to be done
+      - functionality to add
+      - incremental approach
+
+   - Convential alternative is:
+      - heavy engineering approach
+      - code divided into modules which are coded in vacuum
+      - modules combined into subassemblies, further combined until one day we have complete application
+      - after all this the application can be presented to the user and tested
+
+   - In case of Drupal the tracer code or skeleton is already available as,
+      - Frontend using TWIG templates in case of website or having an API in case of headless
+      - Backend already working with set of libraries provided by Symphony with MYSQL and interacting with frontend
+      - so we directly look into building the actual application on top of the tracer code/skeleton
+
+   - We can still use the concept of tracer code in Drupal by doing the minimal requirement for a feature end to end using the available skeleton rather than looking to complete it 100% and then show a demo.
+
+   #### Advantages of tracer code approach
+   - Users get to see something working early
+      - if communicated successfully (Topic 52 in book Delight Your Users), your users will know they are seeing something immature and hence would not be disappointed that its not complete.
+      - visible progress in an incermental way
+      - contribute in decisions right from start and hence we get their buy in
+      - the users will also tell us if our tracer code is close to target in each iteration
+
+   - Developers build a structure to work in
+      - mostly a challenge if we are starting from scratch : as most daunting piece of paper is the one with nothing written on it
+      - gives something to start from and build upon
+      - makes the team more productive and encourages consistency
+
+   - You have an integration platform
+      - you have the base environment to which you can add peices of code
+      - no big-bang integration
+      - continous integration immediately post development
+      - impact of each change is visible and clear
+      - faster debugging and testing
+
+   - You have something to demonstrate
+      - Project sponsors want to see demos as most inconvenient time - when it is not ready
+      - with tracer code you always have something to show them
+
+   #### Tracer Bullets Don't Always Hit Their Target
+   - Tracer bullets helps you to see where you are hitting
+   - it does not ensure you hit the target
+   - you adjust the aim until they're on target. That's the point.
+
+   - Same with tracer code as well.
+   - Use tracer code methodology when you are not sure what you are doing.
+   - expect the user to say "that's not what I meant" or data you need isn't available
+   - fail fast and learn
+   - easy to change as your application is lean with minimal code
+   - users are also confident that what they are seeing is a peice of final applicationa and not just a paper specification
+
+   ### Tracer Code versus Prototyping
+   - Tracer Code is not an aggressive name for Prototyping (POC)
+   - There is a real difference
+
+   - With prototype you aim to explore specific grey areas where you are not sure
+   - with a true prototype, you will throw away whatever you did
+   - you recode it properly using the lesson learned
+
+   - Example,
+      - application that helps shippers determine how to pack odd-sized boxes into containers
+      - the UI needs to be interactive like users dragging and dropping boxes into containers and the algorithm to validate if it is optimal packing will be complex
+
+   - In a prototype,
+      - you code UI just to show the layout, the elements and get their approval
+      - then throw it away and re-do it with proper standards and methods with business logic in place
+      - you make your decisions with prototype, you'd start again and code in final environment, interafacing to real world
+
+   - Tacer code addresses a different problem,
+      - it helps to see how the application as a whole hangs together
+      - shows how interactions work in the final system
+      - develops an architectural skeleton on top which the application resides
+      - for above example, you create a FCFS container packing algorithm which is very simple and make it to interact with UI when user drags and drops the boxes
+      - creates a framework for the developers which stays intact
+
+   - Prototyping generates disposable code whereas Tracer code generates skeleton for final system
+   - Think of prototyping as intelligence gathering mechanism that takes place before a single tracer bullet is fired
