@@ -520,23 +520,24 @@
 
    #### Tracer Bullets Don't Always Hit Their Target
    - Tracer bullets helps you to see where you are hitting
-   - it does not ensure you hit the target
-   - you adjust the aim until they're on target. That's the point.
+      - it does not ensure you hit the target
+      - you adjust the aim until they're on target. That's the point.
+
 
    - Same with tracer code as well.
    - Use tracer code methodology when you are not sure what you are doing.
-   - expect the user to say "that's not what I meant" or data you need isn't available
-   - fail fast and learn
-   - easy to change as your application is lean with minimal code
-   - users are also confident that what they are seeing is a peice of final applicationa and not just a paper specification
+      - expect the user to say "that's not what I meant" or data you need isn't available
+      - fail fast and learn
+      - easy to change as your application is lean with minimal code
+      - users are also confident that what they are seeing is a peice of final applicationa and not just a paper specification
 
    ### Tracer Code versus Prototyping
    - Tracer Code is not an aggressive name for Prototyping (POC)
    - There is a real difference
 
    - With prototype you aim to explore specific grey areas where you are not sure
-   - with a true prototype, you will throw away whatever you did
-   - you recode it properly using the lesson learned
+      - with a true prototype, you will throw away whatever you did
+      - you recode it properly using the lesson learned
 
    - Example,
       - application that helps shippers determine how to pack odd-sized boxes into containers
