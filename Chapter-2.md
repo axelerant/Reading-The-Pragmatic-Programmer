@@ -557,3 +557,70 @@
 
    - Prototyping generates disposable code whereas Tracer code generates skeleton for final system
    - Think of prototyping as intelligence gathering mechanism that takes place before a single tracer bullet is fired
+
+   ## Prototypes and Post-it Notes
+   - Try out specific ideas/concepts
+   - Cheaper than full-scale production
+
+   ### Examples
+   - Car makers - Prototypes to test specific aspect like aerodynamics, styling, structure, etc...
+   - Clay model, wood and duct tape model, virtual reality model
+
+   ### Why Prototypes?
+   - Try out risky or uncertain elements without committing to build the real item
+   - analyze and expose risk
+   - offers chances for correction at a greatly reduced cost much early on
+   - test one or more specific aspects of a project which we are unsure of
+   - cheaper and faster to develop than applications that go into production
+   - we can ignore the things which are unimportant at the moment but important when doing actual project
+      - for UI prototype you need not worry about correctness of results
+      - for computational or performance prototype you need not worry about UI or even do with no UI
+   - if you are in an environment where you cannot give up details like above then a tracer bullet approach is appropriate in that case
+
+   ### Types of Prototypes
+   - Prototypes need not be code-based always
+   - Post-it notes are good to prototype workflow and application logic
+   - UI can be prototyped on a whiteboard or even with paint
+
+   ### Things to Prototype
+   Anything that
+   - carries risk
+   - hasn't been tried before
+   - absolutely critical to final system
+   - unproven, experimental or doubtful
+   - aren't comfortable with
+
+   You can prototype:
+   - Architecture
+   - New functionality in an existing system
+   - Structure or contents of external data
+   - Third-party tools or components
+   - Performance issues
+   - User interface design
+
+   Prototype is a learning experience. Its value lies not in code produced, but in the lessons learned. That's really the point of prototyping.
+
+   > Prototype to Learn
+
+   ### How to Use Prototypes
+   When building a prototype, what details can you ignore?
+
+   #### Correctness
+   You may be able to use dummy data where appropriate
+
+   #### Completeness
+   Prototype may function only in a very limited sense, e.g. with only one preselected piece of input data and one menu item
+
+   #### Robustness
+   Error checking is likely to be incomplete or missing entirely. If you give unexpected inputs the prototype may crash and burn and that's okay.
+
+   #### Style
+   Prototype code itself may not contain comments although documentation maybe an output or result of prototyping to document the experience and learnings
+
+   ### What to use to Prototype
+   - You may want to use high level scripting language such as Python or Ruby for a prototype
+   - You may continue in same langauge for actual system or switch to another
+
+   - To prototype UI, use a tool that lets you focus on appearance and/or interactions without worrying about code or markup
+
+
