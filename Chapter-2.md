@@ -623,4 +623,23 @@
 
    - To prototype UI, use a tool that lets you focus on appearance and/or interactions without worrying about code or markup
 
+   ### Prototyping Architecture
+   - Many prototypes are constructed to model the entire system under consideration
+   - None of the individual modules in prototype needs to be functional as in tracer bullets
+   - You not even need to code to prototype architecture, whiteboard and post-it notes/index card would do
 
+   ### What are the areas you may want to test in architectural prototype?
+   - Are the responsibilities of the major areas well defined and appropriate?
+   - Are the colloborations between major components well defined?
+   - Is coupling minimized?
+   - Can you identify potential sources of duplication (DRY areas)?
+   - Are interface definitions and constraints acceptable?
+   - Does every module have an access path to the data it needs during execution? Does it have the access _when_ it needs it
+
+   The last point generate most surprises and most valuable results from prototyping experience
+
+   ### How Not to Use Prototypes
+   TODO
+
+   ### Exercises
+   TODO
