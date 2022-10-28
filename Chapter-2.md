@@ -645,7 +645,7 @@
 
    > Looks can be deceiving, especially good ones.
 
-   - If you don't set the right expectations in beginning, project sponsors or management may insist on deploying the prototype being misled by the apprent completeness of the prototype
+   - If you don't set the right expectations in beginning, project sponsors or management may insist on deploying the prototype being misled by the apparent completeness of the prototype
    - You can build a great pototype of a car using balsa wood and duct tape but you wouldn't try to drive it in rush hour traffic
 
    - If you feel there is a strong possibility in your organization culture/environment for prototyping to be misinterpreted, instead go for tracer bullet approach.
@@ -663,7 +663,7 @@
 
    - Computer languages influence how you think about a problem, and how you think about communicating
    - Every language comes with a list of features or buzzwords all of which may suggest or obscure certain solutions
-   - Designing a solution with C++ in mind will produce different results than a solution based on [Haskell-style] (https://en.wikipedia.org/wiki/Haskell) thinking, and vice versa.
+   - Designing a solution with C++ in mind will produce different results than a solution based on [Haskell-style](https://en.wikipedia.org/wiki/Haskell) thinking, and vice versa.
 
    - We try to write code in vocabulary of the application domain - using variables, comments, function names that match close to what we are building
    - Pragmatic programmers can go to the next level and actually program using the vocabulary, syntax and semantics - the language - of the domain.
