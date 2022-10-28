@@ -639,7 +639,20 @@
    The last point generate most surprises and most valuable results from prototyping experience
 
    ### How Not to Use Prototypes
-   TODO
+   - Everyone needs to understand that you are writing disposable code
+   - Prototypes can be deceptively attractive to people who don't know that they are just prototypes
+   - Make it very clear to all the stakeholders (internal and external) that this code is disposable, incomplete, and unable to be completed
+
+   > Looks can be deceiving, especially good ones.
+
+   - If you don't set the right expectations in beginning, project sponsors or management may insist on deploying the prototype being misled by the apprent completeness of the prototype
+   - You can build a great pototype of a car using balsa wood and duct tape but you wouldn't try to drive it in rush hour traffic
+
+   - If you feel there is a strong possibility in your organization culture/environment for prototyping to be misinterpreted, instead go for tracer bullet approach.
+   - You end up building a strong foundation for your future development.
+
+   - Properly used prototype can save you huge amounts of time, money and pain
+   - Identifies and corrects potential problem spots early in the development cycle - the time when fixing mistakes are cheap and easy
 
    ### Exercises
-   TODO
+   Marketing would like to sit down and brainstorm a few web page designs with you. They are thinking of clickable image maps to take you to other pages and so on. But they can't decide on a model for the image - maybe it's a car, or a phone, or a house. You have a list of target pages and content; they'd like to see a few prototypes. Oh, by the way, you have 15 minutes. What tools might you use?
