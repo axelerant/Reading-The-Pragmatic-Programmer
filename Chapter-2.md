@@ -656,3 +656,18 @@
 
    ### Exercises
    Marketing would like to sit down and brainstorm a few web page designs with you. They are thinking of clickable image maps to take you to other pages and so on. But they can't decide on a model for the image - maybe it's a car, or a phone, or a house. You have a list of target pages and content; they'd like to see a few prototypes. Oh, by the way, you have 15 minutes. What tools might you use?
+
+   ## Domain Languages
+
+   > The limits of language are the limits of one's world.
+
+   - Computer languages influence how you think about a problem, and how you think about communicating
+   - Every language comes with a list of features or buzzwords all of which may suggest or obscure certain solutions
+   - Designing a solution with C++ in mind will produce different results than a solution based on [Haskell-style] (https://en.wikipedia.org/wiki/Haskell) thinking, and vice versa.
+
+   - We try to write code in vocabulary of the application domain - using variables, comments, function names that match close to what we are building
+   - Pragmatic programmers can go to the next level and actually program using the vocabulary, syntax and semantics - the language - of the domain.
+
+   > Program Close to the Problem Domain
+
+   - Take a look at Cucumber, RSpec, Phoenix
