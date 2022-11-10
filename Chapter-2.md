@@ -747,3 +747,51 @@
    ```
 
    - This example ensures that latest version of nginx is installed on my servers, that is started by default and then uses the configuration file that you provided
+
+   ### Characteristics of Domain languages
+   - Looking at the above examples more closely, we can categorise domain languages into two:
+      - RSpec and Phoenix router are written in host languages (i.e.) the langauge of the application itself, here Ruby and Elixir
+      - They include some additions like [metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming) and macros but compiled and run as the application code itself.
+      - True extensions to your code's vocabulary
+      - These are internal domain languages
+
+      - Cucumber and Ansible configurations are writen in own langauges
+      - Read by code and converted into some form the code can use to run it
+      - These are external languages
+
+   ### Trade-Offs Between Internal and External languages
+   - Internal domain language can take advantage of the features of the host langauge
+   - You can use a loop in Ruby to iterate and repeat the same code in RSpec and do 100 tests
+
+   ```
+   describe BowlingScore do
+      (0..4).each do |pins|
+         (1..20).each do |throws|
+            target = pins * throws
+            it "totals #{target} if you score #{pins} #{throws} times" do
+               score = BowlingScore.new
+               throws.times { score.add_pins(pins) }
+               expect(score.total).to eq(target)
+            end
+         end
+      end
+   ```
+
+   - Downside of internal domain languages is you're bound by syntax and semantics of the host language.
+   - You are forced to compromise between the language you want and language you can implement.
+   - Whatever you come up must be a valid syntax in your target langauge
+
+   - External language have no such restrictions as long as you create a parser for the language that can read it and convert it
+   - You can use existing parsers' but again it has its limiatations
+   - Writing a parser is no trivial task and it needs adding libraries and tools to your application
+   - Parser generators can be sort for help like bison or ANTLR
+
+   **Suggestion**
+   Don't spend more effort than you save
+
+   - Everything that you do requires additinal effort and that should not be more than what you are hoping to save in long run
+   - Use external langauges only in cases when it is written by users of your application who do not know your programming language
+
+   ### An Internal Domain Langauge on the Cheap
+   - Use can use a bunch of functions that does the job instead of metaprogamming for internal langauges.
+   - RSpec is an example where the keywords _describe, it, expect, to_ and _eq_ are just Ruby methods
