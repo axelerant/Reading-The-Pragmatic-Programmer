@@ -670,4 +670,80 @@
 
    > Program Close to the Problem Domain
 
-   - Take a look at Cucumber, RSpec, Phoenix
+   ### Some Real-World Domain Languages
+   - Let's look at some examples where the program itself is written using the domain language rather than sticking on to a restricted syntax.
+
+   #### RSpec
+   - Testing library in Ruby that inspired versions for most other modern languages.
+   - Intended to reflect the behavior you expect from your code.
+
+   ```
+   describe BowlingScore do
+      it "totals 12 if you score 3 four times" do
+         score = BowlingScore.new
+         4.times { score.add_pins(3) }
+         expect(score.total).to eq(12)
+      end
+   end
+   ```
+   #### Cucumber
+   - Programming language neutral way of specifying tests.
+   - You use the version of Cucumber that matches closely to the programming language you use.
+   - To support natural language like syntax you also have to write specific matchers that recognize phrases and extract parameters for the tests.
+
+   ```
+   Feature: Scoring
+
+   Background:
+      Given an empty scorecard
+
+   Scenario: bowling a lot of 3s
+      Given I throw a 3
+      And I throw a 3
+      And I throw a 3
+      And I throw a 3
+      Then the score should be 12
+   ```
+   - Cucumber tests are intended to be read by customer to validate what we are developing however that does not happen in real world.
+
+   #### Why ?
+   - When you force a business person to read some cucumber tests and sign off it is like telling them to check spelling in language they don't know even if it is like above in a domain specific way
+   - Instead given them actual program that does something and that's when you come to know of their actual requirements
+
+   #### Phoenix Routes
+   - Web frameworks have routing facility that routes incoming requests to a common file before giving it to final handlers (like index.php)
+
+   - Below is an example from Phoenix
+
+   ```
+   scope "/", HelloPhonix do
+      pipe_through :browser # Use the default browser stack
+
+      get "/", PageController, :index
+      resources "/users", UserController
+   end
+   ```
+   -  This says,
+      -  requests starting with "/" will be run through a series of filters appropriate for browsers
+      - request to "/" itself will be handled by the _index_ function in the _PageController_ module
+      - _UserController_ implements the functions needed to manage a resource accessible via the url _/users_
+
+   #### Ansible
+   - Tool that configures software on bunch of remote hosts
+   - Reads a spec that you provide and mirros them on the servers
+   - Written in YAML
+
+   ```
+   - name: install nginx
+     apt: name=nginx state=latest
+
+   - name: ensure nginx is running (and enable it at boot)
+     service: name=nginx state=started enabled=yes
+
+   - name: write the nginx config file
+     template: src=templates/nginx.conf.j2 dest=/etc/nginx/nginx.conf
+     notify:
+     - restart nginx
+   ```
+
+   - This example ensures that latest version of nginx is installed on my servers, that is started by default and then uses the configuration file that you provided
