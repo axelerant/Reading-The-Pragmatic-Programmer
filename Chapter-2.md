@@ -856,12 +856,11 @@
    - When someone asks for an estimate understand why they are asking, what are they going to decide based on your estimate
    - Understand the context of the question before giving the estimate and you will know whether they need high accuracy or a ballpark figure?
 
+
    - One of the interesting things about estimating is that the units you use make a difference in the interpretation of the result.
-
-   - 130 working days is same as about six months
-   - However in later the person asking for estimate would be fine even if you complete the work in 5-7 months. You get 1 extra month - 20 days as buffer.
-
-   - Using a larger unit indirectly conveys that the estimate is approx whereas the more specific you convey an estimate, the more accurate it is assumed to be
+      - 130 working days is same as about six months
+      - However in later the person asking for estimate would be fine even if you complete the work in 5-7 months. You get 1 extra month - 20 days as buffer.
+      - Using a larger unit indirectly conveys that the estimate is approx whereas the more specific you convey an estimate, the more accurate it is assumed to be
 
    Duration | Quote estimate in
    --- | ---
@@ -871,6 +870,7 @@
    20+ weeks | Think hard before giving an estimate
 
    So after doing all the necessary work to arrive at an estimate and you arrive at 125 working days (25 weeks), you might want to deliver an estimate of "about six months".
+
 
    - Choose the units as per the accuracy you want to convey
    - The larger the units the less accurate your estimates are
