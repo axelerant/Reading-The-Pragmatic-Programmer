@@ -839,12 +839,9 @@
    - How much storage you need for million names and addresses?
    - How long does it take to compress 100Mb of text?
    - How many months will it take to deliver your project?
-
-
    - We are usually faced with above kind of questions which are meaningless and missing a lot of information
    - Yet all can be answered if we are comfortable estimating. But we aren't are we ?
    - In the process of estimate, you'll come to understand more about the world your programs inhabit.
-
    - By learning to estimate and by developing the skill to intuitively point out areas where the magnitude of work will be required, you will be able to show apparent magical ability to determine their feasibility.
    - When coding you will be able to find out which subsystems needs optimizing and which ones can be left alone.
 
