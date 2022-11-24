@@ -834,4 +834,49 @@
 
    2 more exercises ..
 
+   ## Estimating
+   - How long will it take to send 75TB of data over a 1Gbps network?
+   - How much storage you need for million names and addresses?
+   - How long does it take to compress 100Mb of text?
+   - How many months will it take to deliver your project?
 
+   - We are usually faced with above kind of questions which are meaningless and missing a lot of information
+   - Yet all can be answered if we are comfortable estimating. But we aren't are we ?
+   - In the process of estimate, you'll come to understand more about the world your programs inhabit.
+
+   - By learning to estimate and by developing the skill to intuitively point out areas where the magnitude of work will be required, you will be able to show apparent magical ability to determine their feasibility.
+
+   - When coding you will be able to find out which subsystems needs optimizing and which ones can be left alone.
+
+   > Estimate to Avoid Surprises
+
+   - The end of the section we can expect a single correct answer to give whenever anyone asks you for an estimate!
+
+   ### How Accurate Is Accurate Enough?
+   - All answers we give for the time required to do something are estimates. There is nothing that is exact value
+   - Only some estimates are more accurate than others
+   - We want to give estimates that are most accurate - gets very close to actual time we take
+   - When someone asks for an estimate understand why they are asking, what are they going to decide based on your estimate
+   - Understand the context of the question before giving the estimate and you will know whether they need high accuracy or a ballpark figure?
+
+   - One of the interesting things about estimating is that the units you use make a difference in the interpretation of the result.
+
+   - 130 working days is same as about six months
+   - However in later the person asking for estimate would be fine even if you complete the work in 5-7 months. You get 1 extra month - 20 days as buffer.
+
+   - Using a larger unit indirectly conveys that the estimate is approx whereas the more specific you convey an estimate, the more accurate it is assumed to be
+
+   Duration | Quote estimate in
+   --- | ---
+   1-15 days | Days
+   3-6 weeks | Weeks
+   8-20 weeks | Months
+   20+ weeks | Think hard before giving an estimate
+
+   So after doing all the necessary work to arrive at an estimate and you arrive at 125 working days (25 weeks), you might want to deliver an estimate of "about six months".
+
+   - Choose the units as per the accuracy you want to convey
+   - The larger the units the less accurate your estimates are
+
+   ### Where Do Estimates Come From ?
+   TODO
