@@ -797,3 +797,39 @@
    ### An Internal Domain Language on the Cheap
    - Use can use a bunch of functions that does the job instead of metaprogamming for internal langauges.
    - RSpec is an example where the keywords _describe, it, expect, to_ and _eq_ are just Ruby methods
+
+   ### Challenges
+   - Could some of the requirements of your current project be expressed in a domain-specific language? Would it be possible to write a compiler or translator that could generate most of the code required?
+      - Idea of Drupal distributions to cater to specific domain - Drupal Commerce
+      - [A domain specific CMS](https://eelcovisser.org/blog/paper/poster/2015/08/31/a-domain-specific-content-management-system-for-managing-large-conference-websites/)
+
+   - If you decide to adopt mini-languages as a way of programming closer to the problem domain, you're accepting that some effort will be required to implement them. Can you see ways in which the framework you develop for one project can be reused in others?
+      - A mini language for ecommerce websites, insurance websites or a generic language for all CMS?
+      - Can this be converted into Drupal code with a parser?
+
+   ### Exercises
+   We want to implement a mini-language to control a simple turtle-graphics system. The language consists of single-letter commands, some followed by a single number. For example, the following input would draw a rectangle:
+
+   P 2 # select pen 2
+   D   # pen down
+   W 2 # draw west 2cm
+   N 1 # then north 1
+   E 2 # then east 2
+   S 1 # then back south
+   U   # pen up
+
+   Implement the code that parses this language. It should be designed so that it is simple to add new commands.
+
+   ![Parser for above](images/parser.jpg)
+   ![Parser for above](images/parser2.jpg)
+
+   In the previous exercise we implemented a parser for the drawing language- it was an external domain language. Now implement it again as an internal language. Don't do anything clever: just write a function for each of the commands. You may have to change the names of the commands to lower case, and maybe to wrap them inside something to provider some context
+
+   ![Solution](images/eg5.jpg)
+
+   Design a BNF grammer in to parse a time specification. All of the following examples should be accepted:
+   ![Solution](images/eg6.jpg)
+
+   2 more exercises ..
+
+
