@@ -915,3 +915,18 @@
    - In real time complex use cases, you need to run the numbers multiple times, varying your critical parameters as needed in the process identifying which ones drive the model
    - This is where a spreadsheet helps as it is good with calculations
    - e.g. The response time is rougly three quarters of a second if the system has SSDs and 32GB of memory, and one second with 16GB memory. (three quarters is same as 750ms but gives a feeling we are less accurate about our estimate)
+   - During the calculation phase, you may get strange answers. e.g. too much hours for an page that seems simple
+   - This is an signal that your model is probably wrong in some aspect. You may want to revisit your critical parameters or your assumptions on those
+
+   ### Keep Track of Your Estimating Prowess
+   - It's a great idea to record your estimates so you can see how close you were
+   - Keep track of the subestimates as well. Be as detailed as possible when recording your estimates
+   - Often you'll find your estimates are pretty good. You will expect it to be after a while once you get comfortable with it
+   - When an estimate turns out wrong, don't just shrug and walk away- find out why. That's how you learn and improve continously
+   - Maybe your choice of parameters where not correct or did not match with reality
+   - Maybe your model was wrong
+   - If you take some time to uncover what went wrong, next time you get better and close to actuals
+
+   ### Estimating Project Schedules
+   TODO
+
