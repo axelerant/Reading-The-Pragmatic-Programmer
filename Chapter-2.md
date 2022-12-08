@@ -876,4 +876,42 @@
    - The larger the units the less accurate your estimates are
 
    ### Where Do Estimates Come From ?
-   TODO
+   - All estimates are based on models of the problem
+   - How to always give good estimates ? The trick is to ask someone who's already done it
+   - There would not be an exact match but you can learn a lot from other's experience than you imagine
+
+   #### Understand What's Being Asked
+   - The first part of any estimation exercise is building an understanding of what's being asked
+   - You need to have a grasp of the scope of the domain
+   - The scope is often implicit and not communicated explicitly and that is why you need to think about the scope before starting to guess
+   - Scope will be part of the answer we give - we refer to this as assumptions
+   - "Assuming there are no traffic accidents and there's gas in the car, I should be there in 20 minutes"
+
+   #### Build a Model of the System
+   - The fun part of estimating
+   - From your understanding of the requirement, build a rough-and-ready bare-bones mental model.
+   - This model is basically the steps your organization uses during development, along with a very rough picture of how the system might be implemented
+   - Building models are creative process and useful in long term as it reveals
+      - Underlying unknowns which might not be apprarent in beginning
+      - The need would be to estimate for X but doing Y might be cheaper than X - an alternative route where you lose only 1 feature but achieve the necessary system in half of the time to do X
+   - Building model introduces inaccuracies into the estimating process but you are trading simplicity of the model to accuracy
+   - Even if you double the effort to arrive at an model, your accuracy might only increase to slight extent
+
+   #### Break the Model into Components
+   - Decompose the model into components
+   - Discover how these components interact to make the model possible
+   - Understand how the component contributes to the model based on which parameter
+
+   #### Give Each Parameter a Value
+   - Once the parameters are identified go through and assign each one a value
+   - You can expect to introduce some errors in this step
+   - The trick is to have an understanding on which parameters have the most impact on the result, and concentrate on getting them about right
+   - Parameters whose values are added to the estimate have least impact
+   - Whereas parameters whose values are multiplied or divided across multiple line items have more impact and this is where it can go wrong - e.g. for a website having similar pages, the time taken to develop/test 1 page
+   - You will often estimate based on other estimations - this is where you need to be cautious as the largest errors might creep in
+
+   #### Calculate the answers
+   - Only in the simplest of cases will an estimate have a single answer
+   - In real time complex use cases, you need to run the numbers multiple times, varying your critical parameters as needed in the process identifying which ones drive the model
+   - This is where a spreadsheet helps as it is good with calculations
+   - e.g. The response time is rougly three quarters of a second if the system has SSDs and 32GB of memory, and one second with 16GB memory. (three quarters is same as 750ms but gives a feeling we are less accurate about our estimate)
