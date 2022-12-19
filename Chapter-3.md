@@ -47,3 +47,23 @@ implementations, tests and documents.
 #### Easier Testing
 
 - Plain text format makes it easier to add, update, or modify the test data without having to create any special tools to do so.
+
+
+## Shell Games
+
+- From shell prompt, you can invoke your full repertoire of tools, using pipes to combine them in ways never dreamt by their original developers.
+- You can perform multiple operations using shell ex. launch applications, debuggers, browsers, editors & utilities, search for files, query status of the system and filter outputs etc..
+- By programming the shell, you can build complex macros commands for activities you perform often.
+- A question may arise here - Can't you do all these operations equally well by pointing & clicking?
+- The simple answer is "no". GUI interfaces can be faster & convenient for simple operations.
+- The benefit of GUI is WYSIWYG - What you see is what you get! and the disadvantage is WYSIAYG - What you see is all you get!
+- Pragmatic programmers don't just code, or develop object models, or write documentation, or automate the build process -- we do all of these things.
+- Gain familiarity with the shell, and you will find your productivity soaring.
+- Play around with your command shell, and you will be surprised at how much productive it makes you.
+
+### A shell of your own
+
+- Just as a woodworkker customizes their workspace, a developer should customize their shell. This typically also involves changing the configuration of the terminal program you use.
+- Changes like - Setting color theme, configuring a prompt, aliases & shell functions, command completion etc..
+
+## Power Editing
