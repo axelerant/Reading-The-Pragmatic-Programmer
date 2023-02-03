@@ -980,7 +980,7 @@
    You say "I'll get back to you."
 
    - You almost always get better results if you slow the process down and spend some time going through the steps we describe in this section.
-   - Estimates given at the coffe machine (like the coffee) come back to haunt you.
+   - Estimates given at the coffee machine (like the coffee) come back to haunt you.
    - Same with the instant estimates given in client calls.
 
    ### Challenges
