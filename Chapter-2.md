@@ -928,5 +928,63 @@
    - If you take some time to uncover what went wrong, next time you get better and close to actuals
 
    ### Estimating Project Schedules
-   TODO
+   - If that "something" that you are estimating is complex, the estimate can be very difficult to produce.
+   - This section, we'll look at two techniques for reducing that uncertainty.
+
+   #### Painting the Missile
+   _"How long will it take to paint the house?"_
+
+   _"Well, if everything goes right, and this paint has the coverage they claim, it might be as few as 10 hours. But that's unlikely: I'd guess a more realistic figure is closer to 18 hours. And, of course, if the weather turns bad, that could push it out to 30 or more"_
+
+   - That's how people estimate in the real world.
+   - Not with a single number unless you force them to do so and that would definetly be inaccurate with a padding added to it that has no base on how it came.
+
+   - The U.S. Navy used a technique called Program Evaluation Review Technique (PERT) to plan the Polaris submarine project.
+
+   - Every PERT task has an
+      - optimistic
+      - most likely
+      - pessimistic estimate
+   - Tasks are arranged into a dependency network and then you use some simple statistics to identify likely best and worst times for the overall project.
+   - Using a range of values will avoid the above error that comes when given a single number (i.e.) padding a number because you are unsure.
+   - The [statistics behind PERT](https://www.knowledgehut.com/tutorials/project-management/pert-estimation-technique) spreads the uncertainity in the project giving you better estimations of the whole project.
+
+   - We are not big fans of this.
+   - Just because we have wall sized charts of the project, have everything clear (or think so) and we use some formula to estimate does not mean we have an accurate estimate.
+   - The chances are we don't, because we have never done this exact thing before. If so, we would not be estimating in first place.
+
+   #### Eating the Elephant
+   - We often find the only way to determine the timetable for a project is by gaining experience on that same project.
+   - This needn't be a paradox if you practice incremental development, repeating the following steps with very thin slices of functonality:
+      - Check requirements
+      - Analyze risk (and prioritize riskiest items earlier)
+      - Design, implement, integrate
+      - Validate with the users
+   - Initially, you may have a vague idea of how many iterations will be required, or how long they may be.
+   - Some methods require you to nail this down as part of the initial plan.
+   - However, except for the most trivial of project, this is a mistake as unless you are working with same project, same team and same technology stack, you are guessing.
+
+   - You complete coding and testing of the initial functionality that you choose to be most risky and important and you mark it as completion of 1st iteration
+   - Based on this you refine you initial guess on the number of iterations required and estimate for next riskiest functionality
+   - With each iteration your confidence and estimate becomes better
+   - This kind of estimation is done with thet team's review at end of each iterative cycle.
+   - To eat an elephant: one bite at a time.
+
+   > Iterate the Schedule with the Code
+
+   - This may not be popular with managed who want a single, hard-and-fast number before the project even starts.
+   - You'll have to help them understand that the team, their productivity, and the environment will determine the schedule.
+   - By refining the schedule as part of each iteration you'll be giving them the most accurate scheduling estimates you can.
+
+   ### What to Say When Asked for an Estimate
+   You say "I'll get back to you."
+
+   - You almost always get better results if you slow the process down and spend some time going through the steps we describe in this section.
+   - Estimates given at the coffe machine (like the coffee) come back to haunt you.
+   - Same with the instant estimates given in client calls.
+
+   ### Challenges
+   - Start keeping a log of your estimates. For each, track how accurate you turned out to be. If your error was greater than 50%, try to find out where your estimate went wrong.
+
+
 
