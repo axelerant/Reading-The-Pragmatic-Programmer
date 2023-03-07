@@ -67,3 +67,47 @@ implementations, tests and documents.
 - Changes like - Setting color theme, configuring a prompt, aliases & shell functions, command completion etc..
 
 ## Power Editing
+
+- A developer/engineer should be able to manipulate text as effortlessly as possible, since text is basic raw material of programming.
+- In first edition of this book, editor had recommended using a single editor for all tasks such as - coding, documentation, memos, system administration etc..
+- In this edition, editor has softened the rule by allowing to use multiple editors but has stressed upon getting fluent in each of them. (Achieve Editor Fluency)
+- Will this help save time?
+- Yes, according to the example given by editor - Over the course of year, you may gain an additional week if you make your editing just 4% more efficient and you edit for 20 hours a week.
+- The real benefit - By becoming fluent, you no longer have to think about the mechanics of editing. (Your thoughts will flow & your programming will benefit)
+- Example - Driving a car, someone who is experienced in driving can control the car instinctively.
+
+### What does "Fluent" mean?
+
+Some of the examples of what "Fleuncy" means here - 
+
+- Reindent code following changes.
+- Comment & uncomment blocks of code using single command.
+- Undo & redo changes.
+- Split the editor window into multiple panels and navigate between them.
+- When editing text, move and make selections by character, word, line and paragraph.
+- When editing code, move by various syntactic units (matching delimeters, functions, modules, ...)
+- Navigate to particular line number.
+- Sort selected lines.
+- Run the current project's tests.
+- Display compilation errors in current project.
+
+If your current editor can't do some of these things, maybe it is the time to switch?
+
+### Moving towards fluency
+
+- Take the pragmatic approach to learn the commands - Learn those commands that make your life easier.
+- Observe yourself while doing something. If what you are doing is repetitive, get into the habit of thinking "there must be some better way to do it", & then find it.
+- One you've find an alternative best way (ex. any shortcut/command), get into the habit of using it again and again by consciously looking for opportunities to use it. After a week or so, you'll find you use it without thinking.
+
+#### Growing your editor
+
+- Editor can be extended by installing some extensions.
+- When you find something limited within your editor, search around for an extension that will do your job.
+- You can also write your own extension & publish it if the problem that you are facing in your editor is a general one and does not have an existing plugin/extension to solve it.
+
+### Challenges
+
+- No more autorepeat - Turn of autorepeat and instead learn the key sequences to move, select and delete by characters, words, lines & blocks.
+- Lose the mouse/trackpad for a week. - Perform operations just by using the keyboard.
+
+## Version Control
