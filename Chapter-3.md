@@ -111,3 +111,46 @@ If your current editor can't do some of these things, maybe it is the time to sw
 - Lose the mouse/trackpad for a week. - Perform operations just by using the keyboard.
 
 ## Version Control
+
+_Progress, far from consisting in change, depends on retentiveness._
+_Those who cannot remember the past are condemned to repeat it._
+_George Santayana, life of Reason_
+
+- Sometimes we look for the operations like - Undo / Redo to go back to previous changes.
+- Version control system is a _giant undo key_ - A project wide time machine that can return you to any desired point.
+- For some people, this is the limit of the usage of VCS. It is a way to collaborate, deploy pipelines, track issues and do a general team interaction.
+
+### Shared Directories are NOT version control.
+
+#### Teams that share their project source files across a network (internall or using cloud storage).
+
+- While doing this, there's a risk of - losing changes, breaking builds & messing up with each other's work.
+- It is like writing concurrent code with shared data and no synchronization mechanism. Use version control.
+
+#### Teams that share their project using both - VCS + files over network (or cloud storage).
+
+- They do this to get the best of both worlds.
+- Their sites are accessible anywhere and it's backed up off-site.
+- But turns out, this is even worse. There is a risk of losing everything in this case.
+- VCS software uses a set of interacting files and directories.
+- If two instances simultaneously make changes, the overall state can become corrupted.
+
+### It starts at the source.
+
+- VCS keeps track of every change made in the source code / documentation.
+- The power of a VCS is way more than just keeping track of changes -
+    -  Who made the changes in a particular line of code?
+    -  Difference between current version and last week's.
+    -  Lines of code changed in between releases.
+    -  Which files get changed more often.
+    -  Lets you identify releases for your software.
+    -  May keep the files they maintain in a central reprository.
+    -  Concurrent editing - Allows making concurrent changes to the same set of files.
+
+- **Always use Version Control System**
+   - Even if you are working as a single-person team on a short duration project.
+   - Even if it is a thrown away prototype.
+   - Even if it is not a source code.
+   - Make sure that everything is under version control - documentation, phone number lists, memos to vendors, makfiles, build & release procedures, shell scripts - EVERYTHING.
+
+### Branching Out
