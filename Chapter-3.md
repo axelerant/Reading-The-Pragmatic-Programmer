@@ -154,3 +154,21 @@ _George Santayana, life of Reason_
    - Make sure that everything is under version control - documentation, phone number lists, memos to vendors, makfiles, build & release procedures, shell scripts - EVERYTHING.
 
 ### Branching Out
+
+- The most powerful and most useful feature is the way VCS lets you isolate islands of developments into branches.
+- You can create branches at any point in project's history & any work you do in that branch will be isolated from all other branches.
+- Once done with your work on that branch, you can merge it into any other branch in future.
+- Branches are like little clone projects.
+- Benefit 1 - The isolation these branches provide.
+- Benefit 2 - Branches are often at the heart of a team project workflow.
+
+Hence, use VCS in your project and if you bump into workflow issues, search for possible solutions.
+
+### Challenges
+
+- Learn & practice the commands to rollback to any previous state of the project using VCS.
+- Use VCS for non project things too.
+- Explore the features of your current VCS and hosting provider that you are not using. If your team is not using feature branches, experiment with introducing them.
+- Spend some time thinking about recovering your own laptop environment in case of a disaster. What would you need to recover? Most of them would just be text files. If they are not in VCS, then add them.
+
+## Debugging
