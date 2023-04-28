@@ -175,7 +175,7 @@ Hence, use VCS in your project and if you bump into workflow issues, search for 
 
 > _It is a painful thing, to look at your own trouble and know that you yourself and no one else has made it._ - Sophocles, Ajax
 
-- The word `bug` has been used to describe an "object of terror" ever since fourteenth centuri.
+- The word `bug` has been used to describe an "object of terror" ever since fourteenth century.
 - The first computer bug was observed by Rear Admiral Dr. Grace Hopper, the inventor of COBOL. (Literally) - A moth caught in a relay in an early computer system.
 - Regrettably, we still have bugs in the system, albeit not the flying kind.
 - Software defects manifests themselves in variety of ways - misunderstood requirements to coding errors.
@@ -201,7 +201,7 @@ Hence, use VCS in your project and if you bump into workflow issues, search for 
 
 ### Where to start
 
-- Make sure that you are working on code that built cleanly - without arnings. We need to concentrate on the harder problems at hand.
+- Make sure that you are working on code that built cleanly - without warnings. We need to concentrate on the harder problems at hand.
 - When trying to solve any problem, you need to gather all the relevant data.
 - You first need to be accurate in your observations.
 - Accuracy in bug reports is further diminished when they come through a third party - You may actually need to watch the user who reported the bug in action to get a sufficient level of detail.
