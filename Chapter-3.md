@@ -176,23 +176,16 @@ Hence, use VCS in your project and if you bump into workflow issues, search for 
 > _It is a painful thing, to look at your own trouble and know that you yourself and no one else has made it._ - Sophocles, Ajax
 
 - The word `bug` has been used to describe an "object of terror" ever since fourteenth centuri.
-
 - The first computer bug was observed by Rear Admiral Dr. Grace Hopper, the inventor of COBOL. (Literally) - A moth caught in a relay in an early computer system.
-
 - Regrettably, we still have bugs in the system, albeit not the flying kind.
-
 - Software defects manifests themselves in variety of ways - misunderstood requirements to coding errors.
-
 - No one writes perfect software, so it's a given that debugging will take up a major portion of your day.
 
 ### Psychology of Debugging
 
 - Debugging is a sensitive, emotional subject for many developers. Instead of attacking it as a puzzle to be solved, you may encounter denial, finger pointing, lame excuses, or just plain apathy.
-
 - _Embrace the fact that debugging is just problem solving, and attack it as such._
-
 - Concenrate on _fixing the problem, not the blame._
-
 - A bug is still your problem, whether it is your fault or someone else's.
 
 ### A debugging mindset
@@ -200,29 +193,58 @@ Hence, use VCS in your project and if you bump into workflow issues, search for 
 > _The easiest person to deceive is one's self._ - Edward Bulwer-Lytton, The Disowned
 
 - Before starting to debug, it is important to adopt the right mindset.
-
 - You need to turn off many of the defenses you use each day to protect your ego, tune out any project pressure you may be under, and get yourself comfortable.
-
 - The first rule of debugging - _Don't panic_
-
 - Take a step back, do not panic and actually think about what could be causing the symptoms that you believe indicate a bug.
-
 - If your first reaction is - "_that's impossible_", you are plainly wrong. Because quite clearly, it can and it has.
-
 - Beware of myopia when debugging - Resist the urge to fix just the symptoms you see, it is more likely that the actual fault may be several steps removed from what you are observing and may involve a number of other related things. try to discover the root cause of the problem.
 
 ### Where to start
 
 - Make sure that you are working on code that built cleanly - without arnings. We need to concentrate on the harder problems at hand.
-
 - When trying to solve any problem, you need to gather all the relevant data.
-
 - You first need to be accurate in your observations.
-
 - Accuracy in bug reports is further diminished when they come through a third party - You may actually need to watch the user who reported the bug in action to get a sufficient level of detail.
-
 - You may need to interview the user who reported the bug in order to gather more data than you were initially given.
-
 - Artifical tests, in other words writing test cases to make sure what you've built is continuosly tested.
 
 ### Debugging Strategies
+
+- Once you think you know what is going on, it's time to find out what the program thinks is going on.
+
+#### Reproducing Bugs
+
+- Best way to start fixing the bug is make it reproducible.
+- But instead of going through long processes of reproducing bugs we want something that can help reproduce a bug in a single step (maybe some kind of a command). Because it is lot harder to fix a bug if you have to go through multiple steps to reproduce the bug.
+- Here's the most important rule of debugging - 
+
+> _Failing test before fixing code._
+
+- The act of writing test informs the solution.
+
+#### Coder in a strange land
+
+- It is lot harder to find a bug when faced with 50,000 lines of code. How should we isolate the problem area?
+- Look at the problem. Is it a crash? Is it about memory? Where is it coming from? Server Side or cleint Side?
+
+> _Read the Damn error message._
+
+##### Bad Results
+
+What if it's not a crash? What if it's just a bad result?
+
+- Get in there with a debugger and use your failing test to trigger the problem.
+- A lot of times, we waste long hours trying to track down a bug only to discover that a particular compilation of code worked fine.
+- Sometimes the problem is obvious, example: Actual value is different from expected value.
+- Why is this value different?
+- Move up & down the call stack to find out the exact area of concern.
+- Keep a notepad handy to jot down the flow, the steps taken and the clue that you've come across.
+
+##### Sensitivity to input values
+
+- We have all been in a situation where the code works fine with test data & survives few weeks in production.
+- Then it suddenly crashes when fed a particular dataset.
+- Sometimes it is easier to start with the data.
+- Try to get the dataset on local and see where it crashes.
+
+#### The Binary Chop
