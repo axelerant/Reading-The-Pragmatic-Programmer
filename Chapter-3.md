@@ -248,3 +248,93 @@ What if it's not a crash? What if it's just a bad result?
 - Try to get the dataset on local and see where it crashes.
 
 #### The Binary Chop
+
+- All developers have come across the code that executes binary search (also known as binary chop) on the array.
+- You look for a particualr value in sorted array by comparing its value for greater or lesser number until you either found a value you wanted.
+- A bit faster approach is "Divide & Conquer". - Choose a value in the middle of the array, if it is the value you are looking for then stop. Otherwise, you can chop the array in two.
+- If the value you find is greater than target then you know it is in the second half. Repeat procedure in appropriate sub array & in no time you will have a result.
+- So how does Binary chop applies in debugging?
+
+"When you're facing a massive stacktrace and you're trying to find out exactly which function mangled the value in error, you do a chop by choosing a stack frame somewhere in the middle and seeing if the error is manifect there."
+
+- If the bug appears in certain datasets, you might be able to do the same thing. Split the dataset into two & debug in the same way as discussed above. Keep dividing the data until you get a minimum set of values that exhibit the problem.
+
+- This technique can also be used to debug a problem introduced during a set of releases.
+
+Example - 
+
+1. Create a test that causes current release to fail.
+2. Then choose a half-way release between now and the last known working version.
+3. Run the test again, and decide how to narrow your search.
+
+
+#### Logging and/or Tracing
+
+- Debuggers generally focus on the state of program now.
+
+- Sometimes you need to watch the state of the program or data structure over time.
+
+- Seeing a stack trace gives incomplete information. It typically can't tell you what you were doing prior to this call chain.
+
+- Tracing statements are little diagnostics messages you print to the screen or to a file that say things such as "got here" and "value of x = 2".
+
+- Tracing is invalueable in any system where time itself is a factor: concurrent process, real-time systems, and event-based applications.
+
+- You can use tracing statements to drill down into code. (Like a call tree).
+
+- Trace messages should be in a regular, consistent format as you may want to parse them automatically. For example, if you needed to track down resource leak(such as unbalanced file opens/closes), you could trace each open & each close in a log file.
+
+
+#### Rubber Ducking
+
+ - A very simple but useful technique for finding the cause of the problemis simply to explain it to someone else.
+
+ - The other person should look over you shoulder at the screen, and nod his or her head constantly (like a rubber duck bobbing up & down in a bathtub)
+
+ - They don't have to say a word, the simple act of explaining, step by step, what the code is supposed to do often causes the problem to leap off the screen and announce itself.
+
+- Sounds simple but in explaining the problem to another person you must explicitly state things that you may take for granted when going through the code yourself. By having to verbalize some of these assumptions, you may suddenly gain new insights into the problem.
+
+- And if you don't have a person, a rubber duck, or tdeey bear, or potted plant will do.
+
+#### Process of Elimination
+
+- It is possible that bug exists in the OS, the compiler, or a third party product but this shouldn't be your first thought.
+
+- It is much more likely that the bug exists in the application code under development.
+
+- Generally it is more profitable to assume that the application code is incorrectly calling into a library than to assume that the library itself is broken. Even if the problem does lie with a third party, you'll still have to eliminate your code before submitting the bug report.
+
+> Remember if you see hoof prints, think horses - not zebras, the OS is probably not broken.
+
+- If you "changed only one thing" and the system stopped working, that one thing was likely to be responsible, directly or indirectly.
+
+#### The Element of Surprise
+
+- When you find yourself surprised by a bug, you must reevaluate truths you hold.
+
+> The amount of surprise you feel when something goes wrong is proportional to the amount of trust and faith you have in the code being run.
+
+- That's why, when faced with a "surprising" failure, you must accept that one or more of your assumptions is wrong.
+
+> Don't assume it - Prove It.
+
+- Figure out why the code was working earlier and why has it failed now? Or was it really tested under different conditions.
+
+- You may have to re-write few test cases to catch it early.
+
+#### Debugging Checklist
+
+- Is the problem being reported a direct result of the underlying bug, or merely a symptom?
+
+- Is the bug really in the framework you're using? Is it in the OS? Or is it in your code?
+
+- If you explained this problem in detail to coworker, what would you say?
+
+- If the suspect code passes its unit tests, are the tests complete enough? What happens if you run the tests with this data?
+
+- Do the conditions that cuased this bug exist anywhere else in the system? Are there other bugs still in the larval stage, just waiting to hatch?
+
+### Challenges
+
+- Debugging is challenge enough :D
