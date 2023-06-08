@@ -66,6 +66,7 @@ implementations, tests and documents.
 - Just as a woodworkker customizes their workspace, a developer should customize their shell. This typically also involves changing the configuration of the terminal program you use.
 - Changes like - Setting color theme, configuring a prompt, aliases & shell functions, command completion etc..
 
+---
 ## Power Editing
 
 - A developer/engineer should be able to manipulate text as effortlessly as possible, since text is basic raw material of programming.
@@ -110,6 +111,7 @@ If your current editor can't do some of these things, maybe it is the time to sw
 - No more autorepeat - Turn of autorepeat and instead learn the key sequences to move, select and delete by characters, words, lines & blocks.
 - Lose the mouse/trackpad for a week. - Perform operations just by using the keyboard.
 
+---
 ## Version Control
 
 _Progress, far from consisting in change, depends on retentiveness._
@@ -171,6 +173,7 @@ Hence, use VCS in your project and if you bump into workflow issues, search for 
 - Explore the features of your current VCS and hosting provider that you are not using. If your team is not using feature branches, experiment with introducing them.
 - Spend some time thinking about recovering your own laptop environment in case of a disaster. What would you need to recover? Most of them would just be text files. If they are not in VCS, then add them.
 
+---
 ## Debugging
 
 > _It is a painful thing, to look at your own trouble and know that you yourself and no one else has made it._ - Sophocles, Ajax
@@ -338,3 +341,80 @@ Example -
 ### Challenges
 
 - Debugging is challenge enough :D
+
+---
+## Text Manipulation
+
+- Pragmatic programmers manipulate the text same way the woodworkers shape the wood.
+- In previous chapter, we discussed some specific tools - Shells, editors, debuggers.
+- These are similar to woodworkers tools specialized to do one or two jobs well.
+- However, some tasks or transformations may not be readily handled by the basic tool set.
+
+- _**We need a general-purpose text manipulation tool**_
+
+> _**Text manipulation languages are to programming what routers are to woodworkers**_.
+
+(Here router means the tool that spins cutting blades very very fast, not a device for interconnecting networks.)
+
+- The routers and text manipulation languages can be incredibly powerful & versatile.
+- These tools, they take time to master.
+- Unix developers often like to use the power of their command shells, augmented with tools such as **awk** and **sed**
+- People who prefer a more structured tool may prefer languages such as Python or Ruby.
+- _**These languages are important enabling languages**_.
+- They can drastically reduce the time taken to perform a task.
+
+> _**Spending 30 minutes trying out a crazy idea is lot better than spending five hours**_.
+
+In the book, practice of programming, Kernighan and Pike built the same program in 5 different languages. The PERL version was the shortest
+
+- With PERL you can - manipulate text, interact with programs, talk over networks, drive web pages, perform arbitrary precision arithmetic etc..
+
+> _**Learn a text manipulation language.**_
+
+To show the wide range applicability of text manipulation languages, here's what authors have done using Ruby & python just related to the creation of the book - 
+
+#### Building the book 
+
+- Build system for the pragmatic bookshelf is written in Ruby. Authors, editors, layout people, and support folks have used Rake tasks to coordinate the building of PDFs and ebooks.
+
+#### Code inclusion & highlighting
+
+- A relatively simple script is invoked when the book is formatted - it extracts a named segment of a source file, does syntax highlighting, and converts the result into the typesetting language we use.
+
+#### Website update
+
+- Simple script that does a partial book build, extracts the table of contents, then uploads it to the book's page on the website.
+- Another script extracts the section of the book and uploads them as samples.
+
+#### Including equations
+
+- Python script that convers LaTex math markup into nicely formatted text.
+
+And so on...
+
+### Exercise
+
+> _**Initially the configuration files were written in YAML format, your company has now standardized on JSON. You have a bunch of YAML files that needs to be converted to JSON. Write a script that converts each .yaml file into a corresponding .json file.**_
+
+## Engineering Daybooks
+
+- Train yourslef to maintain engineering daybook. 
+
+### What is a daybook?
+
+> A kind of journal in which you can record what you've done. Eample, a complex problem that you just solved using an in built helper function that you've never used before. In your daybook, add this as a learning point.
+
+You can use daybook for the following - 
+
+- Take notes in the meetings.
+- To jot down what you're working on.
+- To note variable values when debugging.
+- To leave reminders where you put things.
+- To record wild ideas.
+
+### Benefits of using a daybook.
+
+- It is more reliable than memory.
+- It gives you a place to store ideas that aren't immediately relevant to the task at hand. That way you can continue to concentrate on what you are doing, knowing that the great idea won't be forgotten.
+
+> _**Use paper, not a file or a wiki: there's something special about the act of writing compared to typing.**_
