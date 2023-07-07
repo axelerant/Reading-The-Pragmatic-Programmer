@@ -43,3 +43,29 @@ Contract is an idea used by the world over - both formally and informally to hel
 - One that does no more and no less than it claims to do.
 - Documenting and verifying that claim is the heart of Design by contract.
 
+### DBC
+
+- Every function and method in a software does something. It has some expectations and based upon that it delivers some output.
+
+- Meyer describes these expectations and claims as follows - 
+
+### Preconditions
+
+- What must be true in order for the routine to be called: the routines's requirements. A routines should never get called when its preconditions would be violated. It is the caller's responsibility to pass good data.
+
+### Postconditions
+
+- What routine is gauranteed to do; the state of the worls when routine is done. The fact that the routine has a postcondition implies that it will conclude: infinite loops aren't allowed.
+
+### Class invariants
+
+- Class ensures that this condition is always true from the perspective of a caller. During internal processing of a routine, the invariant may not hold, but by the time routine exits and control returns to the caller, the invariant must be true.
+
+* The contract between a routine and any potential caller can thus be read as :
+
+> If all the routines's preconditions are met by the caller, the routine shall gaurantee that all postconditions and invariants will be true when it completes.
+
+If either party fails to live up to the terms of the contract, then a remedy is invoked - maybe an exception is raised, or the program terminates.
+
+> Whatever happens, make no mistake that failure to live up to the contract is a "BUG".
+
