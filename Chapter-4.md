@@ -23,3 +23,23 @@
 
 ## Design by Contract
 
+- Dealing with computer system is hard. Dealing with people is even harder.
+- One of the best solution for ensuring plain dealing is *contract*
+
+### What is a contract?
+
+A contract defines your rights and responsibilities, as well as those of the other party. In addition, there is an agreement concerning repercurssions if either party fails to abide by the contract.
+Example - 
+- Employment contract.
+
+Contract is an idea used by the world over - both formally and informally to help humans interact. The same can be used to help software modules interact.
+
+- Bertrand Meyer (Object oriented software construction [Mey97]) developed the concept of *Design by contract* for the language Eiffel.
+
+- Simple yet powerful technique that focuses on documenting the rights and responsibilities of software modules to ensure program correctness.
+
+### What is a correct program?
+
+- One that does no more and no less than it claims to do.
+- Documenting and verifying that claim is the heart of Design by contract.
+
