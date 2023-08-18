@@ -69,3 +69,72 @@ If either party fails to live up to the terms of the contract, then a remedy is 
 
 > Whatever happens, make no mistake that failure to live up to the contract is a "BUG".
 
+- Some languages have better support for these concepts than others. Clojure, for example, supports pre and post conditions as well as the more comprehensive instrumentation provided by specs. Here's an example of a banking function to make a deposit using simple pre and post conditions:
+
+### Example 1
+![DBC Example 1](images/DBCBankingExample.jpg)
+
+In this example, there are two *Preconditions* for the `accept-deposit` function:
+
+-- The first is that the amount is greater than zero ( `> amount 0.00` ).
+
+-- The second is that the account is open and valid ( `account-open?` ).
+
+There is also a *Postcondition*: the function gaurantees that the new transaction (`return value of this function, represented here by %`) can be found among the transactions for this account.
+
+Hence, if you call the `accept-deposit` with a positive amount for the deposit and a valid account, it will proceed to create a transaction of the appropriate type and will perform other processing as well.
+
+However, if there is a bug in the program, for example passing negative amount for the deposit , you will get a runtime exception:
+
+![DBC Runtime Exception 1](images/DBCRutimeException.jpg)
+
+- Other languages have features that, while not DBC-specific, can still be used to good effect. For example, Elixir uses `guard clauses` to dispatch function calls against several available bodies:
+
+### Example 2
+![DBC Example 2](images/DBCExample2.jpg)
+
+In this example, calling `accept_deposit` with a large enough amount may trigger additional steps and processing.
+
+Try to call it with an `amount less than or equal to zero`, and you'll get an exception that you can't:
+
+`** (FunctionClauseError) no function clause matching in Deposits.accept_deposit/2`
+
+* This is a better approach than simply checking your inputs: In this case, you simply cannot call this function if your arguments are out of range.
+
+- In *Orthogonality*, we recommend writing *shy* code. here, the emphasis is on *lazy* code: be strict in what you will accept before you begin, and promise as little as possible in return.
+
+> Remember, if your contract indicates that you will accept anything and promise the world in return, then you've got a lot of code to write!
+
+> In any programming language, whether it is functional, object oriented or prodcedural, DBC forces you to *think*.
+
+### Class Invariants and Functional Languages
+- Class invariant is a naming thing. Eiffel is an object-oriented language, so Meyer named this idea “class invariant.” But, it’s more general than that. 
+
+_**What this idea really refers to is state**_.
+
+- In an object-oriented language, the state is associated with instances of classes. But other languages have state, too.
+- In a functional language, you typically pass state to functions and receive updated state as a result. 
+- The concepts of invariants is just as useful in these circumstances.
+
+### DBC and TDD (test driven development)
+
+*QUESTION:* Is design by contract needed in a world where developers practice unit testing, test driven development, property-based testing, or defensive programming.
+
+
+The short answer is _**yes**_
+
+> DBC and testing are different approaches to the broader topic of program correctness.
+
+They both have value and both have different uses in different situations. DBC offers several advantages over specific testing approaches -
+
+- DBC doesn't require any setup or mocking.
+- DBC defines the parameters for success or failure in all cases, whereas testing can only target one specific case at a time.
+- TDD and other testing happens only at “test time” within the build cycle. But DBC and assertions are forever: during design, development, deployment, and maintenance.
+- TDD does not focus on checking internal invariants within the code under test, it’s more black-box style to check the public interface.
+- DBC is more efficient (and DRY-er) than defensive programming, where everyone has to validate data in case no one else does.
+
+_**TDD is a great technique, but as with many techniques, it might invite you to concentrate on the “happy path,” and not the real world full of bad data, bad actors, bad versions, and bad specifications.**_
+
+### Implementing DBC
+
+...
