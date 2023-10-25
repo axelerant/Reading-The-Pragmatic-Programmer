@@ -135,6 +135,58 @@ They both have value and both have different uses in different situations. DBC o
 
 _**TDD is a great technique, but as with many techniques, it might invite you to concentrate on the “happy path,” and not the real world full of bad data, bad actors, bad versions, and bad specifications.**_
 
-### Implementing DBC
+### Dead program tell no lies
 
-...
+> Have you noticed that sometimes other people can detect that things aren’t well with you before you’re aware of the problem yourself?
+- It’s the same with other people’s code
+- Sometimes it is a library or framework routine that catches the issue with your software first.
+
+- Example 
+-- Maybe we’ve passed in a `nil` value, or an empty list. 
+-- Maybe there’s a missing key in that hash, or the value we thought contained a hash really contains a list instead. 
+-- Maybe there was a network error or filesystem error that we didn’t catch, and we’ve got empty or corrupted data. 
+
+> It’s easy to fall into the “it can’t happen” mentality
+- Most of us have written code that didn’t check that a file closed successfully, or that a trace statement got written as we expected
+- We’re coding defensively. We’re making sure that the data is what we think it is, that the code in production is the code we think it is. 
+- We’re checking that the correct versions of dependencies were actually loaded.
+
+> All errors give you information
+-  You could convince yourself that the error can’t happen, and choose to ignore it
+-  Instead, Pragmatic Programmers tell themselves that if there is an error, something very, very bad has happened.
+
+> Don’t forget to Read the Damn Error Message
+
+#### Catch and Release Is for Fish
+
+- Some developers feel that is it good style to catch or rescue all exceptions, re-raising them after writing some kind of message.
+- Their code is full of things like this (where a bare raise statement reraises the current exception):
+
+![Dead programs tell no lies](images/deadPrograms.png)
+
+- Here’s how Pragmatic Programmers would write this:
+`add_score_to_board(score);`
+
+- We prefer it for two reasons:
+1. The application code isn’t eclipsed by the error handling.
+2. The code is less coupled.
+
+In the verbose example, we have to list every exception the `add_score_to_board` method could raise. If the writer of that method adds another exception, our
+code is subtly out of date. In the more pragmatic second version, the new exception is automatically propagated.
+
+
+> Tip: Crash Early
+
+### Crash, don't trash
+
+- One of the benefits of detecting problems as soon as you can is that you can crash earlier, and crashing is often the best thing you can do.
+- Joe Armstrong, inventor of Erlang and author of Programming Erlang: Software for a Concurrent World [Arm07], is often quoted as saying, `“Defensive programming is a waste of time. Let it crash!"`
+- In these environments, programs are designed to fail, but that failure is managed with _supervisors_
+- A supervisor is responsible for running code and knows what to do in case the code fails, which could include cleaning up after it, restarting it, and so on.
+- **What happens when the supervisor itself fails?** - Its own supervisor manages that event, leading to a design composed of supervisor trees.
+- The technique is very effective and helps to account for the use of these languages in high-availability, fault-tolerant systems.
+- In other environments, it may be inappropriate simply to exit a running program
+- However, the basic principle stays the same—when your code discovers that something that was supposed to be impossible just happened, your program is no longer viable.
+- Anything it does from this point forward becomes suspect, so terminate it as soon as possible.
+
+> A dead program normally does a lot less damage than a crippled one.
